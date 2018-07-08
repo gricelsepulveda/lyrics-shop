@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="F:\xampp\htdocs\posthemes\pos_digitech\themes\theme_digitech3\modules\posbestsellers\posbestsellers.tpl" source-language="ar-SA" target-language="ar-SA" datatype="plaintext">
+    <body>
+      <trans-unit id="265ad5cf3e811048df18f0dd30ecc452">
+        <source>bestseller products</source>
+        <target>bestseller products</target>
+        <note>Context:
+File: F:\xampp\htdocs\posthemes\pos_digitech\themes\theme_digitech3\modules\posbestsellers\posbestsellers.tpl:4</note>
+      </trans-unit>
+      <trans-unit id="f7be84d6809317a6eb0ff3823a936800">
+        <source>No best sellers at this time</source>
+        <target>No best sellers at this time</target>
+        <note>Context:
+File: F:\xampp\htdocs\posthemes\pos_digitech\themes\theme_digitech3\modules\posbestsellers\posbestsellers.tpl:91</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="F:\xampp\htdocs\posthemes\pos_digitech\themes\theme_digitech3\modules\posfeaturedproducts\posfeaturedproducts.tpl" source-language="ar-SA" target-language="ar-SA" datatype="plaintext">
+    <body>
+      <trans-unit id="ca7d973c26c57b69e0857e7a0332d545">
+        <source>Featured products</source>
+        <target>Featured products</target>
+        <note>Context:
+File: F:\xampp\htdocs\posthemes\pos_digitech\themes\theme_digitech3\modules\posfeaturedproducts\posfeaturedproducts.tpl:6</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="F:\xampp\htdocs\posthemes\pos_digitech\themes\theme_digitech3\modules\poslistcategories\views\templates\hook\poslistcategories.tpl" source-language="ar-SA" target-language="ar-SA" datatype="plaintext">
+    <body>
+      <trans-unit id="36d2f4f17bd7344e33c8ff459454f199">
+        <source>Our Categories</source>
+        <target>Our Categories</target>
+        <note>Context:
+File: F:\xampp\htdocs\posthemes\pos_digitech\themes\theme_digitech3\modules\poslistcategories\views\templates\hook\poslistcategories.tpl:30</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="F:\xampp\htdocs\posthemes\pos_digitech\themes\theme_digitech3\modules\posnewproducts\posnewproducts.tpl" source-language="ar-SA" target-language="ar-SA" datatype="plaintext">
+    <body>
+      <trans-unit id="9ff0635f5737513b1a6f559ac2bff745">
+        <source>New products</source>
+        <target>New products</target>
+        <note>Context:
+File: F:\xampp\htdocs\posthemes\pos_digitech\themes\theme_digitech3\modules\posnewproducts\posnewproducts.tpl:5</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="F:\xampp\htdocs\posthemes\pos_digitech\themes\theme_digitech3\modules\posspecialproducts\posspecialproducts.tpl" source-language="ar-SA" target-language="ar-SA" datatype="plaintext">
+    <body>
+      <trans-unit id="cffc3a7ef1450a70991313df9a0898ee">
+        <source>Deal of the day</source>
+        <target>Deal of the day</target>
+        <note>Context:
+File: F:\xampp\htdocs\posthemes\pos_digitech\themes\theme_digitech3\modules\posspecialproducts\posspecialproducts.tpl:4</note>
+      </trans-unit>
+      <trans-unit id="c91e4ee170226d66e90f99ba917e4c20">
+        <source>Quick view</source>
+        <target>Quick view</target>
+        <note>Context:
+File: F:\xampp\htdocs\posthemes\pos_digitech\themes\theme_digitech3\modules\posspecialproducts\posspecialproducts.tpl:45</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="F:\xampp\htdocs\posthemes\pos_digitech\themes\theme_digitech3\modules\postabcateslider\views\templates\admin\_configure\helpers\form\form.tpl" source-language="ar-SA" target-language="ar-SA" datatype="plaintext">
+    <body>
+      <trans-unit id="92fbf0e5d97b8afd7e73126b52bdc4bb">
+        <source>Choose a file</source>
+        <target>إختيار ملف</target>
+        <note>Context:
+File: F:\xampp\htdocs\posthemes\pos_digitech\themes\theme_digitech3\modules\postabcateslider\views\templates\admin\_configure\helpers\form\form.tpl:42</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="F:\xampp\htdocs\posthemes\pos_digitech\themes\theme_digitech3\modules\postabcateslider\views\templates\hook\categories-tree.tpl" source-language="ar-SA" target-language="ar-SA" datatype="plaintext">
+    <body>
+      <trans-unit id="99078a8f3786817fbaa593c08ff04a5d">
+        <source>Select categories</source>
+        <target>Select categories</target>
+        <note>Context:
+File: F:\xampp\htdocs\posthemes\pos_digitech\themes\theme_digitech3\modules\postabcateslider\views\templates\hook\categories-tree.tpl:5</note>
+      </trans-unit>
+      <trans-unit id="c9cc8cce247e49bae79f15173ce97354">
+        <source>Save</source>
+        <target>حفظ</target>
+        <note>Context:
+File: F:\xampp\htdocs\posthemes\pos_digitech\themes\theme_digitech3\modules\postabcateslider\views\templates\hook\categories-tree.tpl:13</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

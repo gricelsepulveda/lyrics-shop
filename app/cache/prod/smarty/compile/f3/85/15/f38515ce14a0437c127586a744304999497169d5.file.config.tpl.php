@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2018-07-07 22:14:54
+<?php /* Smarty version Smarty-3.1.19, created on 2018-07-08 14:07:10
          compiled from "/home/lyricscl/meeta.online/modules/dashgoals/views/templates/hook/config.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:16155459855b41739ecda7a8-40617214%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:4370095595b4252ceed2b18-81975255%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '16155459855b41739ecda7a8-40617214',
+  'nocache_hash' => '4370095595b4252ceed2b18-81975255',
   'function' => 
   array (
   ),
@@ -25,9 +25,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5b41739ed14fe9_64155305',
+  'unifunc' => 'content_5b4252cef07892_53324211',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5b41739ed14fe9_64155305')) {function content_5b41739ed14fe9_64155305($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5b4252cef07892_53324211')) {function content_5b4252cef07892_53324211($_smarty_tpl) {?>
 <section id="dashgoals_config" class="dash_config hide">
 	<header><i class="icon-wrench"></i> <?php echo smartyTranslate(array('s'=>'Configuration','d'=>'Admin.Global'),$_smarty_tpl);?>
 </header>
