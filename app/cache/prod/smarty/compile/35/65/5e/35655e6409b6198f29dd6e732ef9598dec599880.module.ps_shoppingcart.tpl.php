@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2018-07-08 14:06:59
+<?php /* Smarty version Smarty-3.1.19, created on 2018-07-09 23:01:59
          compiled from "module:ps_shoppingcart/ps_shoppingcart.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:7646042325b4252c30f94e4-47302520%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:6134653855b4421a7eeeca4-88199261%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'module',
     ),
   ),
-  'nocache_hash' => '7646042325b4252c30f94e4-47302520',
+  'nocache_hash' => '6134653855b4421a7eeeca4-88199261',
   'function' => 
   array (
   ),
@@ -25,9 +25,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5b4252c3122b35_86623245',
+  'unifunc' => 'content_5b4421a7f17844_45382420',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5b4252c3122b35_86623245')) {function content_5b4252c3122b35_86623245($_smarty_tpl) {?><div class="blockcart cart-preview dropdown js-dropdown" data-refresh-url="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['refresh_url']->value, ENT_QUOTES, 'UTF-8');?>
+<?php if ($_valid && !is_callable('content_5b4421a7f17844_45382420')) {function content_5b4421a7f17844_45382420($_smarty_tpl) {?><div class="blockcart cart-preview dropdown js-dropdown" data-refresh-url="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['refresh_url']->value, ENT_QUOTES, 'UTF-8');?>
 ">
   <div class="header" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">
     <a rel="nofollow" href="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['cart_url']->value, ENT_QUOTES, 'UTF-8');?>

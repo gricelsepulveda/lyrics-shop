@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2018-07-08 14:07:48
+<?php /* Smarty version Smarty-3.1.19, created on 2018-07-09 22:52:28
          compiled from "/home/lyricscl/meeta.online/admin665ktjzgo/themes/new-theme/template/components/layout/shop_list.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:12038775925b4252f48162f6-79698188%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:17324905395b441f6c0b29a1-52913763%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '12038775925b4252f48162f6-79698188',
+  'nocache_hash' => '17324905395b441f6c0b29a1-52913763',
   'function' => 
   array (
   ),
@@ -26,9 +26,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5b4252f48492d1_95235466',
+  'unifunc' => 'content_5b441f6c0dba41_07914456',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5b4252f48492d1_95235466')) {function content_5b4252f48492d1_95235466($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5b441f6c0dba41_07914456')) {function content_5b441f6c0dba41_07914456($_smarty_tpl) {?>
 <?php if (isset($_smarty_tpl->tpl_vars['is_multishop']->value)&&$_smarty_tpl->tpl_vars['is_multishop']->value&&$_smarty_tpl->tpl_vars['shop_list']->value&&(isset($_smarty_tpl->tpl_vars['multishop_context']->value)&&$_smarty_tpl->tpl_vars['multishop_context']->value&Shop::CONTEXT_GROUP||$_smarty_tpl->tpl_vars['multishop_context']->value&Shop::CONTEXT_SHOP||$_smarty_tpl->tpl_vars['multishop_context']->value&Shop::CONTEXT_ALL)) {?>
   <div id="shop-list" class="shop-list dropdown ps-dropdown stores">
     <span class="link" data-toggle="dropdown">

@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2018-07-08 14:06:59
+<?php /* Smarty version Smarty-3.1.19, created on 2018-07-09 23:01:59
          compiled from "module:possearchproducts/possearch.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:67770895b4252c328aeb7-03238831%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:8279046695b4421a7f3cf15-15014182%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'module',
     ),
   ),
-  'nocache_hash' => '67770895b4252c328aeb7-03238831',
+  'nocache_hash' => '8279046695b4421a7f3cf15-15014182',
   'function' => 
   array (
   ),
@@ -26,9 +26,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5b4252c32bca61_17654208',
+  'unifunc' => 'content_5b4421a8016f32_20982873',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5b4252c32bca61_17654208')) {function content_5b4252c32bca61_17654208($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5b4421a8016f32_20982873')) {function content_5b4421a8016f32_20982873($_smarty_tpl) {?>
 
 <!-- pos search module TOP -->
 <div id="pos_search_top" class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
