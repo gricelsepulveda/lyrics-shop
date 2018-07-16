@@ -27,13 +27,28 @@
 jQuery(document).ready(function ($) {
 	var logo = $(".logo-slider");
 	logo.owlCarousel({
-	items :5,
-	slideSpeed: 1000,
-	pagination : false,
-	navigation : false,
-	itemsDesktop : [1199,5],
-	itemsDesktopSmall : [911,4],
-	itemsTablet: [767,3],
-	itemsMobile : [479,2]
+		autoPlay : true ,
+		smartSpeed: 1000,
+		autoplayHoverPause: true,
+		nav: true,
+		dots : false,	
+		responsive:{
+			0:{
+				items:2,
+			},
+			480:{
+				items:3,
+			},
+			768:{
+				items:4,
+				nav:false,
+			},
+			992:{
+				items:5,
+			},
+			1200:{
+				items:6,
+			}
+		}
 	});
 });

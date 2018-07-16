@@ -128,7 +128,7 @@ class posstaticfooter extends Module {
 		 {        
 		  $this->context->controller->addJquery();
 		 
-		  if(Tools::getValue('controller')=='AdminPosstaticfooter'){
+		  if(Tools::getValue('controller')=='AdminPosStaticFooter'){
 			$this->context->controller->addJS(($this->_path).'js/staticblock.js');
 		  }
 		  

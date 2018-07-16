@@ -67,7 +67,7 @@ class Staticblock extends ObjectModel
 						//echo "<Pre>"; print_r($blockModule); echo "</pre>";
 						$ob['block_module'] = $blockModule;
 						$description = $ob['description'];
-						$description = str_replace('/posthemes/pos_digitech/',__PS_BASE_URI__,$description);
+						$description = str_replace('/pos_ororus/',__PS_BASE_URI__,$description);
 						$ob['description'] = $description;
 						// array_push($ob, $blockModule);
                        $newObject[$key] = $ob;

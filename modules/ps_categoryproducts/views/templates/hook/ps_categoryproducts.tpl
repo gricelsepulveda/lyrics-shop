@@ -22,23 +22,17 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<section class="categoryproducts">
-	<div class="pos_title">
-		<h2>
-		{if $products|@count == 1}
-		{l s='%s other product in the same category:' sprintf=[$products|@count] d='Modules.Categoryproducts.Shop'}
-		{else}
-		{l s='%s other products in the same category:' sprintf=[$products|@count] d='Modules.Categoryproducts.Shop'}
-		{/if}
-		</h2>
-	</div>
-	<div class="pos_content">
-		<div class="product_categoryslide">
-			 {foreach from=$products item="product"}
-				<div class="item-product">
-					{include file="catalog/_partials/miniatures/product.tpl" product=$product}
-				</div>
-			{/foreach}
-		</div>
-	</div>
+<section>
+  <h2>
+    {if $products|@count == 1}
+      {l s='%s other product in the same category:' sprintf=[$products|@count] d='Modules.Categoryproducts.Shop'}
+    {else}
+      {l s='%s other products in the same category:' sprintf=[$products|@count] d='Modules.Categoryproducts.Shop'}
+    {/if}
+  </h2>
+  <div>
+      {foreach from=$products item="product"}
+          {include file="catalog/_partials/miniatures/product.tpl" product=$product}
+      {/foreach}
+  </div>
 </section>

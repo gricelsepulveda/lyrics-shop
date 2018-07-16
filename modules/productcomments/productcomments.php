@@ -82,8 +82,8 @@ class ProductComments extends Module
 			!$this->registerHook('displayHeader') ||
 			!$this->registerHook('displayReviewsProduct') ||
 			!$this->registerHook('displayProductListReviews') ||
-			!Configuration::updateValue('PRODUCT_COMMENTS_MINIMAL_TIME', 30) ||
-			!Configuration::updateValue('PRODUCT_COMMENTS_ALLOW_GUESTS', 0) ||
+			!Configuration::updateValue('PRODUCT_COMMENTS_MINIMAL_TIME', 1) ||
+			!Configuration::updateValue('PRODUCT_COMMENTS_ALLOW_GUESTS', 1) ||
 			!Configuration::updateValue('PRODUCT_COMMENTS_MODERATE', 1))
 			return false;
 		return true;

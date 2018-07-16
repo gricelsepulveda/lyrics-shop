@@ -24,23 +24,23 @@
 *}
 
 <!-- pos search module TOP -->
-<div id="pos_search_top" class="col-lg-10 col-md-9 col-sm-12 col-xs-12">
+<div id="pos_search_top" class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
 	<form method="get" action="{$search_controller_url}" id="searchbox" class="form-inline form_search"  data-search-controller-url="{$url_search|escape:'html'}">
-		<!-- <label for="pos_query_top">image on background</label> -->
+		<label for="pos_query_top"><!-- image on background --></label>
         <input type="hidden" name="controller" value="search">  
 		<div class="pos_search form-group">
              {if $cate_on == 1}
                 <select class="bootstrap-select" name="poscats">
-					<option value="0">{l s='All categories' mod='possearchproducts'}</option>
+					<option value="0">{l s='All categories' mod='blocksearch_mod'}</option>
 						{foreach from=$categories_option.children item=child name=categories_option}
 							{include file="modules/possearchproducts/category-tree-branch.tpl" node=$child main=true}
 						{/foreach}
 				</select>
             {/if} 
         </div>
-		<input type="text" name="s" value="{$search_string}" placeholder="{l s='Enter your search key ... ' mod='possearchproducts'}" id="pos_query_top" class="search_query form-control ac_input" >
+		<input type="text" name="s" value="{$search_string}" placeholder="{l s='Enter your search key ... ' mod='possearchcategories'}" id="pos_query_top" class="search_query form-control ac_input" >
 		<button type="submit" class="btn btn-default search_submit">
-			<i class="material-icons">search</i>
+			<i class="fa fa-search"></i>
 		</button>
     </form>
 </div>

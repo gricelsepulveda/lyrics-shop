@@ -43,13 +43,13 @@ class PosListCategories extends Module implements WidgetInterface
 	protected $identifier = false;
 	public $className;
 
-	protected $default_items = 4;
+	protected $default_items = 5;
 	protected $default_speed = 1000;
 	protected $default_delay = 3000;
 	protected $default_auto = 0;
-	protected $default_arrow = 1;
+	protected $default_arrow = 0;
 	protected $default_nav = 0;
-	protected $default_per_md = 3;
+	protected $default_per_md = 5;
 	protected $default_per_sm = 3;
 	protected $default_per_xs = 2;
 	protected $default_per_xxs = 1;

@@ -1,9 +1,9 @@
 <pos_static_blocks>
 <!-- static block configuration -->
 	<block>
-		<id_posstaticblock>5</id_posstaticblock>
-		<identify>banner_center</identify>
-		<hook_position>displayBlockPosition3</hook_position>
+		<id_posstaticblock>1</id_posstaticblock>
+		<identify>static_nav</identify>
+		<hook_position>displayNav</hook_position>
 		<name_module></name_module>
 		<hook_module>0</hook_module>
 		<posorder>0</posorder>
@@ -12,8 +12,19 @@
 		<showhook>1</showhook>
 	</block>
 	<block>
-		<id_posstaticblock>6</id_posstaticblock>
-		<identify>banner_top</identify>
+		<id_posstaticblock>2</id_posstaticblock>
+		<identify>static_phone</identify>
+		<hook_position>displayTop</hook_position>
+		<name_module></name_module>
+		<hook_module>0</hook_module>
+		<posorder>0</posorder>
+		<insert_module>0</insert_module>
+		<active>0</active>
+		<showhook>1</showhook>
+	</block>
+	<block>
+		<id_posstaticblock>3</id_posstaticblock>
+		<identify>static_conten</identify>
 		<hook_position>displayTopColumn</hook_position>
 		<name_module></name_module>
 		<hook_module>0</hook_module>
@@ -23,8 +34,19 @@
 		<showhook>1</showhook>
 	</block>
 	<block>
-		<id_posstaticblock>7</id_posstaticblock>
-		<identify>banner_home</identify>
+		<id_posstaticblock>4</id_posstaticblock>
+		<identify>static1_home1</identify>
+		<hook_position>displayBlockPosition1</hook_position>
+		<name_module></name_module>
+		<hook_module>0</hook_module>
+		<posorder>0</posorder>
+		<insert_module>0</insert_module>
+		<active>0</active>
+		<showhook>1</showhook>
+	</block>
+	<block>
+		<id_posstaticblock>5</id_posstaticblock>
+		<identify>static_future</identify>
 		<hook_position>displayBlockPosition2</hook_position>
 		<name_module></name_module>
 		<hook_module>0</hook_module>
@@ -33,50 +55,131 @@
 		<active>0</active>
 		<showhook>1</showhook>
 	</block>
-
+	<block>
+		<id_posstaticblock>6</id_posstaticblock>
+		<identify>static_home_cate</identify>
+		<hook_position>displayBlockPosition4</hook_position>
+		<name_module></name_module>
+		<hook_module>0</hook_module>
+		<posorder>0</posorder>
+		<insert_module>0</insert_module>
+		<active>0</active>
+		<showhook>1</showhook>
+	</block>	
 <!-- block lang configuration -->
 	<block_lang>
-		<id_posstaticblock>5</id_posstaticblock>
+		<id_posstaticblock>1</id_posstaticblock>
 		<id_lang>1</id_lang>
-		<title>Banner Center</title>
+		<title>Static Nav</title>
 		<description>
 			 <![CDATA[
-				<div class="banner-center">
+				<div class="box-tags">
+				<div class="custom-tag clearfix"><label>Trending Search:</label>
+				<ul>
+				<li><a href="#">Headphones</a></li>
+				<li>,</li>
+				<li><a href="#">Electronics</a></li>
+				<li>,</li>
+				<li><a href="#">Mobile..</a></li>
+				</ul>
+				</div>
+				</div>
+			 ]]>
+		</description>
+	</block_lang>
+	<block_lang>
+		<id_posstaticblock>2</id_posstaticblock>
+		<id_lang>1</id_lang>
+		<title>static phone</title>
+		<description>
+			 <![CDATA[
+				<div class="static_phone">
+				<h2>Call Us Now:</h2>
+				<p>+88 123.456.789</p>
+				</div>
+			 ]]>
+		</description>
+	</block_lang>
+	<block_lang>
+		<id_posstaticblock>3</id_posstaticblock>
+		<id_lang>1</id_lang>
+		<title>static conten</title>
+		<description>
+			 <![CDATA[
+				<div class="static1">
 				<div class="container">
 				<div class="row">
-				<div class="col col-lg-3 col-md-6 col-sm-6 ">
-				<div class="block-wrapper wrapper1">
-				<div class="text-des">
-				<h3>Free delivery</h3>
-				<p>Free shipping on all order</p>
+				<div class="box1 col col-lg-4 col-md-12 col-xs-12">
+				<div class="box-iner">
+				<div class="icon"><span>time</span></div>
+				<div class="text">
+				<h2>Mon - Fri / 8:00 - 18:00</h2>
+				<p>Working Days/Hours!</p>
 				</div>
 				</div>
 				</div>
-				<div class="col col-lg-3 col-md-6 col-sm-6 ">
-				<div class="block-wrapper wrapper2">
-				<div class="text-des">
-				<h3>Online Support 24/7</h3>
-				<p>Support online 24 hours a day</p>
+				<div class="box2 col col-lg-4 col-md-12 col-xs-12">
+				<div class="box-iner">
+				<div class="icon"><span>FREE</span></div>
+				<div class="text">
+				<h2>FREE RETURN</h2>
+				<p>30 days money back guaratee!</p>
 				</div>
 				</div>
 				</div>
-				<div class="col col-lg-3 col-md-6 col-sm-6 ">
-				<div class="block-wrapper wrapper3">
-				<div class="text-des">
-				<h3>Money Return</h3>
-				<p>Back guarantee under 7 days</p>
-				</div>
-				</div>
-				</div>
-				<div class="col col-lg-3 col-md-6 col-sm-6 ">
-				<div class="block-wrapper wrapper4">
-				<div class="text-des">
-				<h3>Member Discount</h3>
-				<p>Onevery order over $130.00</p>
+				<div class="box3 col col-lg-4 col-md-12 col-xs-12">
+				<div class="box-iner">
+				<div class="icon"><span>Support</span></div>
+				<div class="text">
+				<h2>Support@posthemes.com</h2>
+				<p>Orders Support!</p>
 				</div>
 				</div>
 				</div>
 				</div>
+				</div>
+				</div>
+			 ]]>
+		</description>
+	</block_lang>
+	<block_lang>
+		<id_posstaticblock>4</id_posstaticblock>
+		<id_lang>1</id_lang>
+		<title>static1 home1</title>
+		<description>
+			 <![CDATA[
+				<div class="static1_img">
+				<div class="container">
+				<div class="static-top">
+				<div class="row">
+				<div class="box1 col col-lg-3 col-md-12 col-xs-12">
+				<div class="banner-box"><a href="#"> <img src="/pos_ororus/img/cms/img1_home1.jpg" alt="" class="img-responsive" /> </a></div>
+				</div>
+				<div class="box2 col col-lg-6 col-md-12 col-xs-12">
+				<div class="banner-box"><a href="#"> <img src="/pos_ororus/img/cms/img2_home1.jpg" alt="" class="img-responsive" /> </a></div>
+				</div>
+				<div class="box3 col col-lg-3 col-md-12 col-xs-12">
+				<div class="banner-box"><a href="#"> <img src="/pos_ororus/img/cms/img3_home1.jpg" alt="" class="img-responsive" /> </a></div>
+				</div>
+				</div>
+				</div>
+				<div class="banner-bottom">
+				<div class="banner-box"><a href="#"> <img src="/pos_ororus/img/cms/img4_home1.jpg" alt="" class="img-responsive" /> </a></div>
+				</div>
+				</div>
+				</div>
+			 ]]>
+		</description>
+	</block_lang>
+	<block_lang>
+		<id_posstaticblock>5</id_posstaticblock>
+		<id_lang>1</id_lang>
+		<title>static future</title>
+		<description>
+			 <![CDATA[
+				<div class="col-xs-12 col-md-12 col-lg-4">
+				<div class="right-future">
+				<div class="banner-box"><a href="#"> <img src="/pos_ororus/img/cms/right_img.jpg" alt="" class="img-responsive" /> </a></div>
 				</div>
 				</div>
 			 ]]>
@@ -85,80 +188,129 @@
 	<block_lang>
 		<id_posstaticblock>6</id_posstaticblock>
 		<id_lang>1</id_lang>
-		<title>Banner Top</title>
+		<title>static home cate</title>
 		<description>
 			 <![CDATA[
-				<div class="banner-top">
-				<div class="row">
-				<div class="col1">
-				<div class="banner-innner"><a href="#"><img src="/posthemes/pos_digitech/img/cms/cms_3.1.jpg" alt="banner" class="img-responsive" /></a></div>
-				</div>
-				<div class="col2">
-				<div class="banner-innner"><a href="#"><img src="/posthemes/pos_digitech/img/cms/cms_3.2.jpg" alt="banner" class="img-responsive" /></a></div>
-				</div>
-				<div class="col3">
-				<div class="banner-innner"><a href="#"><img src="/posthemes/pos_digitech/img/cms/cms_3.3.jpg" alt="banner" class="img-responsive" /></a></div>
-				</div>
-				</div>
-				</div>
-			 ]]>
-		</description>
-	</block_lang>
-	<block_lang>
-		<id_posstaticblock>7</id_posstaticblock>
-		<id_lang>1</id_lang>
-		<title>Banner Home</title>
-		<description>
-			 <![CDATA[
-				<div class="banner-home">
-				<div class="banner-innner"><a href="#"><img src="/posthemes/pos_digitech/img/cms/cms_3.4.jpg" alt="banner" class="img-responsive" /></a></div>
+				<div class="static-top-cate">
+				<div class="banner-box"><a href="#"> <img src="/pos_ororus/img/cms/static_home.jpg" alt="" class="img-responsive" /> </a></div>
 				</div>
 			 ]]>
 		</description>
 	</block_lang>
 	
 	<block_lang>
-		<id_posstaticblock>5</id_posstaticblock>
+		<id_posstaticblock>1</id_posstaticblock>
 		<id_lang>2</id_lang>
-		<title>Banner Center</title>
+		<title>Static Nav</title>
 		<description>
 			 <![CDATA[
-				<div class="banner-center">
+				<div class="box-tags">
+				<div class="custom-tag clearfix"><label>Trending Search:</label>
+				<ul>
+				<li><a href="#">Headphones</a></li>
+				<li>,</li>
+				<li><a href="#">Electronics</a></li>
+				<li>,</li>
+				<li><a href="#">Mobile..</a></li>
+				</ul>
+				</div>
+				</div>
+			 ]]>
+		</description>
+	</block_lang>
+	<block_lang>
+		<id_posstaticblock>2</id_posstaticblock>
+		<id_lang>2</id_lang>
+		<title>static phone</title>
+		<description>
+			 <![CDATA[
+				<div class="static_phone">
+				<h2>Call Us Now:</h2>
+				<p>+88 123.456.789</p>
+				</div>
+			 ]]>
+		</description>
+	</block_lang>
+	<block_lang>
+		<id_posstaticblock>3</id_posstaticblock>
+		<id_lang>2</id_lang>
+		<title>static conten</title>
+		<description>
+			 <![CDATA[
+				<div class="static1">
 				<div class="container">
 				<div class="row">
-				<div class="col col-lg-3 col-md-6 col-sm-6 ">
-				<div class="block-wrapper wrapper1">
-				<div class="text-des">
-				<h3>Free delivery</h3>
-				<p>Free shipping on all order</p>
+				<div class="box1 col col-lg-4 col-md-12 col-xs-12">
+				<div class="box-iner">
+				<div class="icon"><span>time</span></div>
+				<div class="text">
+				<h2>Mon - Fri / 8:00 - 18:00</h2>
+				<p>Working Days/Hours!</p>
 				</div>
 				</div>
 				</div>
-				<div class="col col-lg-3 col-md-6 col-sm-6 ">
-				<div class="block-wrapper wrapper2">
-				<div class="text-des">
-				<h3>Online Support 24/7</h3>
-				<p>Support online 24 hours a day</p>
+				<div class="box2 col col-lg-4 col-md-12 col-xs-12">
+				<div class="box-iner">
+				<div class="icon"><span>FREE</span></div>
+				<div class="text">
+				<h2>FREE RETURN</h2>
+				<p>30 days money back guaratee!</p>
 				</div>
 				</div>
 				</div>
-				<div class="col col-lg-3 col-md-6 col-sm-6 ">
-				<div class="block-wrapper wrapper3">
-				<div class="text-des">
-				<h3>Money Return</h3>
-				<p>Back guarantee under 7 days</p>
-				</div>
-				</div>
-				</div>
-				<div class="col col-lg-3 col-md-6 col-sm-6 ">
-				<div class="block-wrapper wrapper4">
-				<div class="text-des">
-				<h3>Member Discount</h3>
-				<p>Onevery order over $130.00</p>
+				<div class="box3 col col-lg-4 col-md-12 col-xs-12">
+				<div class="box-iner">
+				<div class="icon"><span>Support</span></div>
+				<div class="text">
+				<h2>Support@posthemes.com</h2>
+				<p>Orders Support!</p>
 				</div>
 				</div>
 				</div>
 				</div>
+				</div>
+				</div>
+			 ]]>
+		</description>
+	</block_lang>
+	<block_lang>
+		<id_posstaticblock>4</id_posstaticblock>
+		<id_lang>2</id_lang>
+		<title>static1 home1</title>
+		<description>
+			 <![CDATA[
+				<div class="static1_img">
+				<div class="container">
+				<div class="static-top">
+				<div class="row">
+				<div class="box1 col col-lg-3 col-md-12 col-xs-12">
+				<div class="banner-box"><a href="#"> <img src="/pos_ororus/img/cms/img1_home1.jpg" alt="" class="img-responsive" /> </a></div>
+				</div>
+				<div class="box2 col col-lg-6 col-md-12 col-xs-12">
+				<div class="banner-box"><a href="#"> <img src="/pos_ororus/img/cms/img2_home1.jpg" alt="" class="img-responsive" /> </a></div>
+				</div>
+				<div class="box3 col col-lg-3 col-md-12 col-xs-12">
+				<div class="banner-box"><a href="#"> <img src="/pos_ororus/img/cms/img3_home1.jpg" alt="" class="img-responsive" /> </a></div>
+				</div>
+				</div>
+				</div>
+				<div class="banner-bottom">
+				<div class="banner-box"><a href="#"> <img src="/pos_ororus/img/cms/img4_home1.jpg" alt="" class="img-responsive" /> </a></div>
+				</div>
+				</div>
+				</div>
+			 ]]>
+		</description>
+	</block_lang>
+	<block_lang>
+		<id_posstaticblock>5</id_posstaticblock>
+		<id_lang>2</id_lang>
+		<title>static future</title>
+		<description>
+			 <![CDATA[
+				<div class="col-xs-12 col-md-12 col-lg-4">
+				<div class="right-future">
+				<div class="banner-box"><a href="#"> <img src="/pos_ororus/img/cms/right_img.jpg" alt="" class="img-responsive" /> </a></div>
 				</div>
 				</div>
 			 ]]>
@@ -167,49 +319,38 @@
 	<block_lang>
 		<id_posstaticblock>6</id_posstaticblock>
 		<id_lang>2</id_lang>
-		<title>Banner Top</title>
+		<title>static home cate</title>
 		<description>
 			 <![CDATA[
-				<div class="banner-top">
-				<div class="row">
-				<div class="col1">
-				<div class="banner-innner"><a href="#"><img src="/posthemes/pos_digitech/img/cms/cms_3.1.jpg" alt="banner" class="img-responsive" /></a></div>
-				</div>
-				<div class="col2">
-				<div class="banner-innner"><a href="#"><img src="/posthemes/pos_digitech/img/cms/cms_3.2.jpg" alt="banner" class="img-responsive" /></a></div>
-				</div>
-				<div class="col3">
-				<div class="banner-innner"><a href="#"><img src="/posthemes/pos_digitech/img/cms/cms_3.3.jpg" alt="banner" class="img-responsive" /></a></div>
-				</div>
-				</div>
+				<div class="static-top-cate">
+				<div class="banner-box"><a href="#"> <img src="/pos_ororus/img/cms/static_home.jpg" alt="" class="img-responsive" /> </a></div>
 				</div>
 			 ]]>
 		</description>
 	</block_lang>
-	<block_lang>
-		<id_posstaticblock>7</id_posstaticblock>
-		<id_lang>2</id_lang>
-		<title>Banner Home</title>
-		<description>
-			 <![CDATA[
-				<div class="banner-home">
-				<div class="banner-innner"><a href="#"><img src="/posthemes/pos_digitech/img/cms/cms_3.4.jpg" alt="banner" class="img-responsive" /></a></div>
-				</div>
-			 ]]>
-		</description>
-	</block_lang>
-	
 <!-- block shop configuration -->
 	<block_shop>
+		<id_posstaticblock>1</id_posstaticblock>
+		<id_shop>1</id_shop>
+	</block_shop>
+	<block_shop>
+		<id_posstaticblock>2</id_posstaticblock>
+		<id_shop>1</id_shop>
+	</block_shop>
+	<block_shop>
+		<id_posstaticblock>3</id_posstaticblock>
+		<id_shop>1</id_shop>
+	</block_shop>
+	<block_shop>
+		<id_posstaticblock>4</id_posstaticblock>
+		<id_shop>1</id_shop>
+	</block_shop>
+	<block_shop>
 		<id_posstaticblock>5</id_posstaticblock>
 		<id_shop>1</id_shop>
 	</block_shop>
 	<block_shop>
 		<id_posstaticblock>6</id_posstaticblock>
-		<id_shop>1</id_shop>
-	</block_shop>
-	<block_shop>
-		<id_posstaticblock>7</id_posstaticblock>
 		<id_shop>1</id_shop>
 	</block_shop>
 </pos_static_blocks>

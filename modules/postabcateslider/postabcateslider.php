@@ -50,7 +50,7 @@ class postabcateslider extends Module implements WidgetInterface {
 	
 	public function install() {
         Configuration::updateValue($this->name . '_row', 1);
-        Configuration::updateValue($this->name . '_number_item', 3);
+        Configuration::updateValue($this->name . '_number_item', 2);
 		Configuration::updateValue($this->name . '_speed_slide', 1000);
         Configuration::updateValue($this->name . '_auto_play', 0);
 		Configuration::updateValue($this->name . '_pause_time', 3000);
@@ -61,11 +61,11 @@ class postabcateslider extends Module implements WidgetInterface {
         Configuration::updateValue($this->name . '_order', 1);
         Configuration::updateValue($this->name . '_move', 1);
         Configuration::updateValue($this->name . '_pausehover', 0);
-        Configuration::updateValue($this->name . '_per_md', 3);
+        Configuration::updateValue($this->name . '_per_md', 2);
         Configuration::updateValue($this->name . '_per_sm', 2);
         Configuration::updateValue($this->name . '_per_xs', 2);
         Configuration::updateValue($this->name . '_per_xxs', 1);
-		$arrayDefault = array('3','4','5');
+		$arrayDefault = array('3','4');
 		$cateDefault = implode(',',$arrayDefault);
 		Configuration::updateGlobalValue($this->name.'_list_cate',$cateDefault);
 		
@@ -88,7 +88,7 @@ class postabcateslider extends Module implements WidgetInterface {
 	{	
 		$values['postabcateslider_img'][(int)$id_lang] = $image;
 		$values['postabcateslider_link'][(int)$id_lang] = '#';
-		$values['postabcateslider_title'][(int)$id_lang] = 'Smart phone & Tablets';
+		$values['postabcateslider_title'][(int)$id_lang] = 'Trending Products';
 		Configuration::updateValue($this->name . '_title', $values['postabcateslider_title']);
 		Configuration::updateValue($this->name . '_img', $values['postabcateslider_img']);
 		Configuration::updateValue($this->name . '_link', $values['postabcateslider_link']);
@@ -149,7 +149,7 @@ class postabcateslider extends Module implements WidgetInterface {
     }
 
     public function getWidgetVariables($hookName = null, array $configuration = [])
-    {
+    {	
         $catSelected = Configuration::get($this->name . '_list_cate');
 		$cateArray = explode(',', $catSelected); 
 		$id_lang =(int) Context::getContext()->language->id;
@@ -171,7 +171,7 @@ class postabcateslider extends Module implements WidgetInterface {
 			if($categoryProducts) {
 				$arrayProductCate[] = array('id' => $id_category, 'name'=> $category->name, 'products' => $categoryProducts,'categorythumbs' => $categorythumb,);
 			}
-		
+
 		}
         $title = Configuration::get($this->name . '_title', $this->context->language->id);
         $slider_options = array(
@@ -195,6 +195,7 @@ class postabcateslider extends Module implements WidgetInterface {
 
 		if ($imgname && file_exists(_PS_MODULE_DIR_.$this->name.DIRECTORY_SEPARATOR.'img'.DIRECTORY_SEPARATOR.$imgname))
 			$this->smarty->assign('banner_img', $this->context->link->protocol_content.Tools::getMediaServer($imgname).$this->_path.'img/'.$imgname);
+
 		if(!empty($arrayProductCate)){
 			return array(
 				'productCates' => $arrayProductCate,
@@ -209,7 +210,7 @@ class postabcateslider extends Module implements WidgetInterface {
        
         return false;
     }
-	protected function getProducts($id_category)
+	protected function getProducts($category_id)
     {   
         $random = false;
         $sortby = Configuration::get($this->name . '_sort');
@@ -245,7 +246,7 @@ class postabcateslider extends Module implements WidgetInterface {
             $orderby = 'ASC';
         };
 
-        $category = new Category($id_category);
+        $category = new Category($category_id);
 
         $searchProvider = new CategoryProductSearchProvider(
             $this->context->getTranslator(),

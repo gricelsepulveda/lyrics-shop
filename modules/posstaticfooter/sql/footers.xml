@@ -1,23 +1,11 @@
 <pos_static_blocks>
 <!-- static block configuration -->
 	<block>
-		<id_posstaticblock>2</id_posstaticblock>
-		<identify>newsletter_block</identify>
-		<hook_position>displayFooterBefore</hook_position>
-		<name_module>ps_emailsubscription</name_module>
-		<hook_module>displayFooter</hook_module>
-		<posorder>0</posorder>
-		<insert_module>1</insert_module>
-		<active>0</active>
-		<is_default>0</is_default>
-		<showhook>1</showhook>
-	</block>
-	<block>
-		<id_posstaticblock>3</id_posstaticblock>
-		<identify>info_static_footer</identify>
+		<id_posstaticblock>1</id_posstaticblock>
+		<identify>about_us</identify>
 		<hook_position>displayFooter</hook_position>
 		<name_module></name_module>
-		<hook_module>displayFooter</hook_module>
+		<hook_module>0</hook_module>
 		<posorder>0</posorder>
 		<insert_module>0</insert_module>
 		<active>0</active>
@@ -25,8 +13,8 @@
 		<showhook>1</showhook>
 	</block>
 	<block>
-		<id_posstaticblock>4</id_posstaticblock>
-		<identify>Copyright</identify>
+		<id_posstaticblock>2</id_posstaticblock>
+		<identify>copyright_block</identify>
 		<hook_position>displayFooterAfter</hook_position>
 		<name_module></name_module>
 		<hook_module>0</hook_module>
@@ -36,103 +24,130 @@
 		<is_default>0</is_default>
 		<showhook>1</showhook>
 	</block>
+	<block>
+		<id_posstaticblock>3</id_posstaticblock>
+		<identify>static1_footer</identify>
+		<hook_position>displayBlockFooter2</hook_position>
+		<name_module></name_module>
+		<hook_module>0</hook_module>
+		<posorder>0</posorder>
+		<insert_module>0</insert_module>
+		<active>0</active>
+		<is_default>0</is_default>
+		<showhook>1</showhook>
+	</block>
 <!-- block language configuration -->	
+	<block_language>
+		<id_posstaticblock>1</id_posstaticblock>
+		<id_lang>1</id_lang>
+		<title>Contact Us</title>
+		<description>
+			 <![CDATA[
+				<div class="col-xs-12 col-md-12 col-lg-4 footer_block">
+				<h3>contact info</h3>
+				<div class="footer_info">
+				<p class="info">We are a team of designers and developers that create high quality Magento, Prestashop, Opencart.</p>
+				<div class="info-link">
+				<ul>
+				<li class="address"><span>The Barn, Ullenhall, Henley in Arden B578 5CC, England</span></li>
+				<li class="phone"><span>+123.456.789 - +123.456.678</span></li>
+				<li class="email"><span>support@posthemes.com</span></li>
+				</ul>
+				</div>
+				</div>
+				</div>
+			 ]]>
+		</description>
+	</block_language>
+	
+	<block_language>
+		<id_posstaticblock>2</id_posstaticblock>
+		<id_lang>1</id_lang>
+		<title>Copyright Block</title>
+		<description>
+			 <![CDATA[
+				<div class="copyright col-sm-12 col-md-6 col-xs-12 ">Copyright @ 2018 <i class="icon-copyright"></i> <a href="http://posthemes.com/">Posthemes</a>. All Rights Reserved</div>
+				<div class=" col-sm-12 col-md-6 col-xs-12 ">
+				<div class="payment"><img src="/pos_ororus/img/cms/payment.png" alt="" class="img-responsive" /></div>
+				</div>
+			 ]]>
+		</description>
+	</block_language>
+	<block_language>
+		<id_posstaticblock>3</id_posstaticblock>
+		<id_lang>1</id_lang>
+		<title>static1 footer</title>
+		<description>
+			 <![CDATA[
+				<div class="st_text">
+				<h3>Online Shopping at Ororus.</h3>
+				<p>Our extensive and affordable range features the very latest electronics and gadgets including smart phones, tablets, smart watches, action cams, tv boxes, televisions, drones, 3d printers, car dvr, along with the latest cool toys like scooters, gaming accessories, doll houses, pretend play and high quality lifestyle products comprising vacuum cleaners, air purifier, kitchen tools, ceiling lights, flashlight, oil painting, etc.</p>
+				</div>
+			 ]]>
+		</description>
+	</block_language>
+	
+	<block_language>
+		<id_posstaticblock>1</id_posstaticblock>
+		<id_lang>2</id_lang>
+		<title>Contact Us</title>
+		<description>
+			 <![CDATA[
+				<div class="col-xs-12 col-md-12 col-lg-4 footer_block">
+				<h3>contact info</h3>
+				<div class="footer_info">
+				<p class="info">We are a team of designers and developers that create high quality Magento, Prestashop, Opencart.</p>
+				<div class="info-link">
+				<ul>
+				<li class="address"><span>The Barn, Ullenhall, Henley in Arden B578 5CC, England</span></li>
+				<li class="phone"><span>+123.456.789 - +123.456.678</span></li>
+				<li class="email"><span>support@posthemes.com</span></li>
+				</ul>
+				</div>
+				</div>
+				</div>
+			 ]]>
+		</description>
+	</block_language>
+	
+	<block_language>
+		<id_posstaticblock>2</id_posstaticblock>
+		<id_lang>2</id_lang>
+		<title>Copyright Block</title>
+		<description>
+			 <![CDATA[
+				<div class="copyright col-sm-12 col-md-6 col-xs-12 ">Copyright @ 2018 <i class="icon-copyright"></i> <a href="http://posthemes.com/">Posthemes</a>. All Rights Reserved</div>
+				<div class=" col-sm-12 col-md-6 col-xs-12 ">
+				<div class="payment"><img src="/pos_ororus/img/cms/payment.png" alt="" class="img-responsive" /></div>
+				</div>
+			 ]]>
+		</description>
+	</block_language>
+	<block_language>
+		<id_posstaticblock>3</id_posstaticblock>
+		<id_lang>2</id_lang>
+		<title>static1 footer</title>
+		<description>
+			 <![CDATA[
+				<div class="st_text">
+				<h3>Online Shopping at Ororus.</h3>
+				<p>Our extensive and affordable range features the very latest electronics and gadgets including smart phones, tablets, smart watches, action cams, tv boxes, televisions, drones, 3d printers, car dvr, along with the latest cool toys like scooters, gaming accessories, doll houses, pretend play and high quality lifestyle products comprising vacuum cleaners, air purifier, kitchen tools, ceiling lights, flashlight, oil painting, etc.</p>
+				</div>
+			 ]]>
+		</description>
+	</block_language>
 
-	<block_language>
-		<id_posstaticblock>2</id_posstaticblock>
-		<id_lang>1</id_lang>
-		<title>Newsletter Block</title>
-		<description>
-			 <![CDATA[
-				
-			 ]]>
-		</description>
-	</block_language>
-	<block_language>
-		<id_posstaticblock>3</id_posstaticblock>
-		<id_lang>1</id_lang>
-		<title>Info Static Footer</title>
-		<description>
-			 <![CDATA[
-				<div class="footer_block col1 col-lg-5 col-md-4 col-xs-12 col-footer">
-				<h3 class="footer_header">Contact Us</h3>
-				<div class="footer-content">
-				<ul class="footer-contact">
-				<li><span>Address:</span>123 Main Street, Anytown, CA 12345 - USA.</li>
-				<li><span>Phone:</span>(012) 800 456 789</li>
-				<li><span>Fax:</span>(012) 800 456 789</li>
-				<li><span>Email:</span>Contact@posthemes.com</li>
-				</ul>
-				<div class="footer-payment"><label>Payment methods:</label> <a href="#"><img src="/posthemes/pos_digitech/img/cms/payment.png" alt="img" /></a></div>
-				</div>
-				</div>
-			 ]]>
-		</description>
-	</block_language>
-	<block_language>
-		<id_posstaticblock>4</id_posstaticblock>
-		<id_lang>1</id_lang>
-		<title>Copyright</title>
-		<description>
-			 <![CDATA[
-				<div class="col-lg-6 col-md-6 col-xs-12"><address>Copyright <i class="icon-copyright"></i><a href="http://posthemes.com/">Posthemes</a>. All Rights Reserved</address></div>
-			 ]]>
-		</description>
-	</block_language>
-	
-	<block_language>
-		<id_posstaticblock>2</id_posstaticblock>
-		<id_lang>2</id_lang>
-		<title>Newsletter Block</title>
-		<description>
-			 <![CDATA[
-				
-			 ]]>
-		</description>
-	</block_language>
-	<block_language>
-		<id_posstaticblock>3</id_posstaticblock>
-		<id_lang>2</id_lang>
-		<title>Info Static Footer</title>
-		<description>
-			 <![CDATA[
-				<div class="footer_block col1 col-lg-5 col-md-4 col-xs-12 col-footer">
-				<h3 class="footer_header">Contact Us</h3>
-				<div class="footer-content">
-				<ul class="footer-contact">
-				<li><span>Address:</span>123 Main Street, Anytown, CA 12345 - USA.</li>
-				<li><span>Phone:</span>(012) 800 456 789</li>
-				<li><span>Fax:</span>(012) 800 456 789</li>
-				<li><span>Email:</span>Contact@posthemes.com</li>
-				</ul>
-				<div class="footer-payment"><label>Payment methods:</label> <a href="#"><img src="/posthemes/pos_digitech/img/cms/payment.png" alt="img" /></a></div>
-				</div>
-				</div>
-			 ]]>
-		</description>
-	</block_language>
-	<block_language>
-		<id_posstaticblock>4</id_posstaticblock>
-		<id_lang>2</id_lang>
-		<title>Copyright</title>
-		<description>
-			 <![CDATA[
-				<div class="col-lg-6 col-md-6 col-xs-12"><address>Copyright <i class="icon-copyright"></i><a href="http://posthemes.com/">Posthemes</a>. All Rights Reserved</address></div>
-			 ]]>
-		</description>
-	</block_language>
-	
 <!-- block shop configuration -->
 	<block_shop>
+		<id_posstaticblock>1</id_posstaticblock>
+		<id_shop>1</id_shop>
+	</block_shop>
+	<block_shop>
 		<id_posstaticblock>2</id_posstaticblock>
 		<id_shop>1</id_shop>
 	</block_shop>
 	<block_shop>
 		<id_posstaticblock>3</id_posstaticblock>
-		<id_shop>1</id_shop>
-	</block_shop>
-	<block_shop>
-		<id_posstaticblock>4</id_posstaticblock>
 		<id_shop>1</id_shop>
 	</block_shop>
 </pos_static_blocks>

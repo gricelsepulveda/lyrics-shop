@@ -44,7 +44,7 @@ class Posmegamenu extends Module {
         Configuration::updateValue($this->name . '_menu_depth', 4);
         Configuration::updateValue($this->name . '_merge_cate', 1);
         Configuration::updateValue($this->name . '_show_depth', 4);
-        Configuration::updateValue($this->name . '_top_offset', 45);
+        Configuration::updateValue($this->name . '_top_offset', 55);
         Configuration::updateValue($this->name . '_effect', 0);
 		$this->installDb();
         return parent::install() &&
@@ -577,7 +577,7 @@ class Posmegamenu extends Module {
         $html = "";
         if (count($staticBlock) > 0) {
             $description= $staticBlock[0]['description'];
-            $description = str_replace('/pos_aboss/',__PS_BASE_URI__,$description);
+            $description = str_replace('/pos_flexshop_1.7/',__PS_BASE_URI__,$description);
             $html .= $description;
         }
         if ($task == 'item') {
@@ -618,7 +618,7 @@ class Posmegamenu extends Module {
             return;
         $cateCurrent = $this->getCurrentCategoriesId($lang_id);
         $categoryObject = new Category();
-        $html = array();
+        $html = '';
         $blockHtml = '';
         $id_shop = (int) Context::getContext()->shop->id;
         $id = $category;
@@ -643,9 +643,9 @@ class Posmegamenu extends Module {
         // --- Popup functions for show ---
         $drawPopup = ($blockHtml || count($activeChildren));
         if ($drawPopup) {
-            $html[] = '<div id="pt_menu' . $id . '" class="pt_menu' . $active . ' nav-' . $item . '">';
+            $html  .= '<div id="pt_menu' . $id . '" class="pt_menu' . $active . ' nav-' . $item . '">';
         } else {
-            $html[] = '<div id="pt_menu' . $id . '" class="pt_menu' . $active . ' nav-' . $item . ' pt_menu_no_child">';
+            $html  .= '<div id="pt_menu' . $id . '" class="pt_menu' . $active . ' nav-' . $item . ' pt_menu_no_child">';
         }
 		//echo $category;
         //$cate = new Category((int) $category);
@@ -655,45 +655,44 @@ class Posmegamenu extends Module {
         $parameters = "";
         $link = Context::getContext()->link->getCategoryLink((int) $category, null, null, ltrim($parameters, '/'));
         // --- Top Menu Item ---
-        $html[] = '<div class="parentMenu">';
-		$html[] = '<a href="' . $link . '" class="fontcustom2">';
+        $html  .= '<div class="parentMenu">';
+		$html  .= '<a href="' . $link . '" class="fontcustom2">';
         $name = strip_tags($cate->name);
         $name = str_replace('&nbsp;', ' ', $name);
 		$name = $this->l($name);
-        $html[] = '<span>' . $name . '</span>';
-		if ($drawPopup) {$html[] = '<i class="icon-caret-down"></i>';}
-        $html[] = '</a>';
-        $html[] = '</div>';
+        $html  .= '<span>' . $name . '</span>';
+		if ($drawPopup) {$html  .= '<i class="icon-caret-down"></i>';}
+        $html  .= '</a>';
+        $html  .= '</div>';
 
         // --- Add Popup block (hidden) ---
         if ($drawPopup) {
             if ($this->_show_level > 2) {
                 // --- Popup function for hide ---
-                $html[] = '<div id="popup' . $id . '" class="popup" style="display: none; width: 1228px;">';
+                $html  .= '<div id="popup' . $id . '" class="popup" style="display: none; width: 1228px;">';
                 // --- draw Sub Categories ---
                  if (count($activeChildren) || $blockHtml) {
-                    $html[] = '<div class="block1" id="block1' . $id . '">';
-                    $html[] = $this->drawColumns($activeChildren, $id, $lang_id);
+                    $html  .= '<div class="block1" id="block1' . $id . '">';
+                    $html  .= $this->drawColumns($activeChildren, $id, $lang_id);
                     if ($blockHtml && $blockHtmlRight) {
-                        $html[] = '<div class="column blockright">';
-                        $html[] = $blockHtml;
-                        $html[] = '</div>';
+                        $html  .= '<div class="column blockright">';
+                        $html  .= $blockHtml;
+                        $html  .= '</div>';
                     }
-                    $html[] = '<div class="clearBoth"></div>';
-                    $html[] = '</div>';
+                    $html  .= '<div class="clearBoth"></div>';
+                    $html  .= '</div>';
                 }
                 // --- draw Custom User Block ---
                 if ($blockHtml && !$blockHtmlRight) {
-                    $html[] = '<div class="block2" id="block2' . $id . '">';
-                    $html[] = $blockHtml;
-                    $html[] = '</div>';
+                    $html  .= '<div class="block2" id="block2' . $id . '">';
+                    $html  .= $blockHtml;
+                    $html  .= '</div>';
                 }
-                $html[] = '</div>';
+                $html  .= '</div>';
             }
         }
 
-        $html[] = '</div>';
-        $html = implode("\n", $html);
+        $html  .= '</div>';
         return $html;
     }
 
@@ -760,7 +759,7 @@ class Posmegamenu extends Module {
             }
             // --- format category name ---
             $name = strip_tags($child['name']);
-            $name = str_replace(' ', '&nbsp;', $name);
+
 
             if (count($child) > 0) {
                 $parameters = null;
@@ -834,33 +833,32 @@ class Posmegamenu extends Module {
         $id = '_' . $blockId;
 
 
-        $blockHtml = str_replace('/pos_aboss/',__PS_BASE_URI__,$bc['description']);
+        $blockHtml = str_replace('/pos_flexshop_1.7/',__PS_BASE_URI__,$bc['description']);
         $drawPopup = $blockHtml;
         if ($drawPopup) {
-            $html[] = '<div id="pt_menu' . $id . '" class="pt_menu">';
+            $html  .= '<div id="pt_menu' . $id . '" class="pt_menu">';
         } else {
-            $html[] = '<div id="pt_menu' . $id . '" class="pt_menu">';
+            $html  .= '<div id="pt_menu' . $id . '" class="pt_menu">';
         }
         // --- Top Menu Item ---
-        $html[] = '<div class="parentMenu">';
-//        $html[] = '<a href="#">';
+        $html  .= '<div class="parentMenu">';
+//        $html  .= '<a href="#">';
         $name = $this->l($bc['title']);
-        $name = str_replace(' ', '&nbsp;', $name);
-        $html[] = '<span class="block-title">' . $name . '</span>';
-//        $html[] = '</a>';
-        $html[] = '</div>';
+        $html  .= '<span class="block-title">' . $name . '</span>';
+//        $html  .= '</a>';
+        $html  .= '</div>';
         // --- Add Popup block (hidden) ---
         if ($drawPopup) {
             // --- Popup function for hide ---
-            $html[] = '<div id="popup' . $id . '" class="popup cmsblock" style="display: none; width: 904px;">';
+            $html  .= '<div id="popup' . $id . '" class="popup cmsblock" style="display: none; width: 904px;">';
             if ($blockHtml) {
-                $html[] = '<div class="block2" id="block2' . $id . '">';
-                $html[] = $blockHtml;
-                $html[] = '</div>';
+                $html  .= '<div class="block2" id="block2' . $id . '">';
+                $html  .= $blockHtml;
+                $html  .= '</div>';
             }
-            $html[] = '</div>';
+            $html  .= '</div>';
         }
-        $html[] = '</div>';
+        $html  .= '</div>';
         $html = implode("\n", $html);
         return $html;
     }

@@ -26,10 +26,10 @@
 
 <div class="poslistcategories">
 	<div class="pos_title">
-		<h2>{l s='Our Categories' mod='poslistcategories'}</h2>
+		<h2>{l s='Featured Categories' mod='poslistcategories'}</h2>
 	</div>
 	<div class="row">
-		<div class="block_content">
+		<div class="block_content owl-carousel">
 		{$count=0}
 		{foreach from=$categories item=category name=myLoop}
 			{if $smarty.foreach.myLoop.index % 2 == 0 || $smarty.foreach.myLoop.first }
@@ -72,15 +72,28 @@
 	$(document).ready(function() {
 		var poslistcategories = $(".poslistcategories .block_content");
 		poslistcategories.owlCarousel({
-			autoPlay : {if $slider_options.auto_play}{if $slider_options.delay}{$slider_options.delay}{else}3000{/if}{else} false{/if} ,
-			items:{$slider_options.number_item},
-			slideSpeed: {if $slider_options.speed_slide}{$slider_options.speed_slide}{else}1000{/if},
-			navigation : {if $slider_options.show_arrow} true {else} false {/if},
-			pagination : {if $slider_options.show_pagination} true {else} false {/if},
-			itemsDesktop : [1199,{$slider_options.items_md}],
-			itemsDesktopSmall : [991,{$slider_options.items_sm}],
-			itemsTablet: [767,{$slider_options.items_xs}],
-			itemsMobile : [479,{$slider_options.items_xxs}],	
+			autoplay :  {if $slider_options.auto_play}{if $slider_options.delay}{$slider_options.delay}{else}3000{/if}{else} false{/if},
+			smartSpeed : {if $slider_options.speed_slide}{$slider_options.speed_slide}{else}1000{/if},
+			nav : {if $slider_options.show_arrow} true {else} false {/if},
+			dots : {if $slider_options.show_pagination} true {else} false {/if},
+			responsive:{
+				0:{
+					items:{$slider_options.items_xxs},
+				},
+				480:{
+					items:{$slider_options.items_xs},
+				},
+				768:{
+					items:{$slider_options.items_sm},
+	
+				},
+				992:{
+					items:{$slider_options.items_md},
+				},
+				1200:{
+					items:{$slider_options.number_item},
+				}
+			}
 		});
 	});
 </script>

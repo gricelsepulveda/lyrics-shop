@@ -99,6 +99,8 @@ class AdminCmsBlockController extends ModuleAdminController {
             array('hook_position'=>'displayBlockPosition3'),
             array('hook_position'=>'displayBlockPosition4'),
             array('hook_position'=>'displayBlockPosition5'),
+			 array('hook_position'=>'displayBlockPosition6'),     
+			 array('hook_position'=>'displayBlockPosition7'),			 
             array('hook_position'=>'productExtraRight'),
             array('hook_position'=>'displayNav'),
 			array('hook_position'=>'displayNav1'),

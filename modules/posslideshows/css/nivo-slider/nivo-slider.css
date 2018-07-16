@@ -65,7 +65,6 @@
 /* slideshow edit */
 
 .slideshow_container {
-    overflow: hidden;
     margin: 0;
 }
 .slideshow_container .pos-slideshow {

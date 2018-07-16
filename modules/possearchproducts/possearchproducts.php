@@ -19,7 +19,7 @@ class Possearchproducts extends Module implements WidgetInterface
 	{
 		$this->name = 'possearchproducts';
 		$this->tab = 'Search and filter';
-		$this->version = 1.6;
+		$this->version = 1.7;
 		$this->author = 'Posthemes';
 		$this->need_instance = 0;
 		$this->bootstrap =true ;

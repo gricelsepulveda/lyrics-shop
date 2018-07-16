@@ -35,20 +35,7 @@
 		<description></description>
 		<porder>0</porder>
 	</logo>
-	<logo>
-		<id_pos_logo>6</id_pos_logo>
-		<title>Logo6</title>
-		<link>http://posthemes.com/</link>
-		<description></description>
-		<porder>0</porder>
-	</logo>
-	<logo>
-		<id_pos_logo>7</id_pos_logo>
-		<title>Logo7</title>
-		<link>http://posthemes.com/</link>
-		<description></description>
-		<porder>0</porder>
-	</logo>
+	
 <!-- slideshop configuration -->
 	<logo_shop>
 		<id_pos_logo>1</id_pos_logo>
@@ -70,12 +57,5 @@
 		<id_pos_logo>5</id_pos_logo>
 		<id_shop>1</id_shop>
 	</logo_shop>
-	<logo_shop>
-		<id_pos_logo>6</id_pos_logo>
-		<id_shop>1</id_shop>
-	</logo_shop>
-	<logo_shop>
-		<id_pos_logo>7</id_pos_logo>
-		<id_shop>1</id_shop>
-	</logo_shop>
+	
 </pos_logo>

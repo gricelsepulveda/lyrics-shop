@@ -25,78 +25,79 @@ class poslogo extends Module {
         parent::__construct();
 
         $this->displayName = $this->l('Pos Logo');
-        $this->description = $this->l('Pos Logo');
+        $this->description = $this->l('block config');
 
         $this->confirmUninstall = $this->l('Are you sure you want to uninstall?');
 	$this->admin_tpl_path 	= _PS_MODULE_DIR_.$this->name.'/views/templates/admin/';
     }
 
-	
-	public function installTab()
-	{
-				
-		$tab = new Tab();
-		$tab->active = 1;
-		$tab->class_name = "AdminPosLogo";
-		$tab->name = array();
-		foreach (Language::getLanguages(true) as $lang) {
-			$tab->name[$lang['id_lang']] = $this->l('Manage Logo');
-		}
-		$tab->id_parent = -1;
-		$tab->module = $this->name;
-		return $tab->add();
-		
-	}
-
-    public function uninstallTab()
-    {
-        $id_tab = (int)Tab::getIdFromClassName('AdminPosLogo');
-        $tab = new Tab($id_tab);
-        return $tab->delete();
-    }
-
    
 
-		public function install()
-		{
-			
-			
-			//create folder blocklogo
-			$path = _PS_IMG_DIR_.'blocklogo';
-			if (!file_exists($path)) {
-				mkdir($path, 0777, true);
-			}  
-			
-			// Install SQL
-			include(dirname(__FILE__).'/sql/install.php');
-			foreach ($sql as $s)
-				if (!Db::getInstance()->execute($s))
-					return false;
-					Configuration::updateValue($this->name . '_auto', 0);
-					Configuration::updateValue($this->name . '_speed_slide', '3000');
-					Configuration::updateValue($this->name . '_a_speed', '600');
-					Configuration::updateValue($this->name . '_qty_products', 9);
-					Configuration::updateValue($this->name . '_qty_items', 9);
-					Configuration::updateValue($this->name . '_width_item', 180);
-					Configuration::updateValue($this->name . '_show_nextback', 1);
-					Configuration::updateValue($this->name . '_show_control', 0);
-					Configuration::updateValue($this->name . '_min_item', 1);
-					Configuration::updateValue($this->name . '_max_item', 5);
-					Configuration::updateValue($this->name . '_mode_dir', 'vertical');
+    public function install()
+	{
+        
+        
+        //create folder blocklogo
+        $path = _PS_IMG_DIR_.'blocklogo';
+        if (!file_exists($path)) {
+            mkdir($path, 0777, true);
+        }  
+        
+        // Install SQL
+		include(dirname(__FILE__).'/sql/install.php');
+		foreach ($sql as $s)
+			if (!Db::getInstance()->execute($s))
+				return false;
+        
+          // Install Tabs
+                if(!(int)Tab::getIdFromClassName('AdminPosMenu')) {
+                    $parent_tab = new Tab();
+                    // Need a foreach for the language
+                    foreach (Language::getLanguages() as $language)
+					$parent_tab->name[$language['id_lang']] = $this->l('PosExtentions');
+                    $parent_tab->class_name = 'AdminPosMenu';
+                    $parent_tab->id_parent = 0; // Home tab
+                    $parent_tab->module = $this->name;
+                    $parent_tab->add();
+                }
 		
-			// Set some defaults
-			return parent::install() &&
-			 $this->installTab()&&
-			 $this->registerHook('brandSlider')&&
-			 $this->_installHookCustomer()&&
-			 $this->registerHook('displayBlockPosition3')&&
-			 $this->registerHook('displayHeader');
-				  
-		}
+		$tab = new Tab();		
+		// Need a foreach for the language
+		//$tab->name[$this->context->language->id] = $this->l('Manage Logo');
+		foreach (Language::getLanguages() as $language)
+            $tab->name[$language['id_lang']] = $this->l('Manage Logo');
+		$tab->class_name = 'AdminPosLogo';
+		$tab->id_parent = (int)Tab::getIdFromClassName('AdminPosMenu');
+		$tab->module = $this->name;
+		$tab->add();
+                Configuration::updateValue($this->name . '_auto', 0);
+                Configuration::updateValue($this->name . '_speed_slide', '3000');
+                Configuration::updateValue($this->name . '_a_speed', '600');
+                Configuration::updateValue($this->name . '_qty_products', 30);
+                Configuration::updateValue($this->name . '_qty_items', 9);
+                Configuration::updateValue($this->name . '_width_item', 180);
+                Configuration::updateValue($this->name . '_show_nextback', 0);
+                Configuration::updateValue($this->name . '_show_control', 0);
+                Configuration::updateValue($this->name . '_min_item', 1);
+                Configuration::updateValue($this->name . '_max_item', 5);
+                Configuration::updateValue($this->name . '_mode_dir', 'vertical');
+	
+		// Set some defaults
+                return parent::install() &&
+		 $this->registerHook('displayBrandSlider')&&
+		 $this->_installHookCustomer()&&
+		 $this->registerHook('displayHeader');
+              
+	}
         
         public function uninstall() {
             
 		Configuration::deleteByName('poslogo');
+
+		// Uninstall Tabs
+		
+                $tab = new Tab((int)Tab::getIdFromClassName('AdminPosLogo'));
+		$tab->delete();
 		Configuration::deleteByName($this->name . '_auto');
                 Configuration::deleteByName($this->name . '_speed_slide');
                 Configuration::deleteByName($this->name . '_a_speed');
@@ -115,10 +116,11 @@ class poslogo extends Module {
 		foreach ($sql as $s)
 			if (!Db::getInstance()->execute($s))
 				return false;
-			
-		      return 
-				parent::uninstall() && 
-				$this->uninstallTab();
+		// Uninstall Module
+		if (!parent::uninstall())
+			return false;
+		// !$this->unregisterHook('actionObjectExampleDataAddAfter')
+		return true;
         }
 
 
@@ -228,10 +230,15 @@ class poslogo extends Module {
 		<form action="' . $_SERVER['REQUEST_URI'] . '" method="post">
                   <fieldset>
                     <legend><img src="../img/admin/edit.gif" alt="" class="middle" />' . $this->l('Settings') . '</legend>
-                        
+                    <div class="margin-form">';
+        $this->_html .='
+                    </div>
                      <label>' . $this->l('Qty of Logos  : ') . '</label>
                     <div class="margin-form">
                             <input type = "text"  name="qty_products" value =' . (Tools::getValue('qty_products') ? Tools::getValue('qty_products') : Configuration::get($this->name . '_qty_products')) . ' ></input>
+                    </div>
+                     <div class="margin-form">';
+        $this->_html .='
                     </div>
                     <input type="submit" name="submitPostLogo" value="' . $this->l('Update') . '" class="button" />
                      </fieldset>
@@ -244,13 +251,11 @@ class poslogo extends Module {
     }
         
 	public function hookDisplayHeader()
-	{       $this->context->controller->addCSS($this->_path.'css/owl.carousel.css');
-			$this->context->controller->addJS($this->_path.'js/owl.carousel.min.js');
+	{       
 			$this->context->controller->addJS($this->_path.'js/poslogo.js');
 	}
 	
-	
-	function hookbrandSlider($params) {
+	function hookdisplayBrandSlider($params) {
 			$options = array(
                 'auto' => Configuration::get($this->name . '_auto'),
                 'speed_slide' => Configuration::get($this->name . '_speed_slide'),
@@ -272,37 +277,11 @@ class poslogo extends Module {
             $this->context->smarty->assign('logos', $logos);
             return $this->display(__FILE__, 'logo.tpl');
 	}
-	
-	function hookdisplayBlockPosition3($params) {
-			$options = array(
-                'auto' => Configuration::get($this->name . '_auto'),
-                'speed_slide' => Configuration::get($this->name . '_speed_slide'),
-                'a_speed' => Configuration::get($this->name . '_a_speed'),
-                'qty_products' => Configuration::get($this->name . '_qty_products'),
-                'qty_items' => Configuration::get($this->name . '_qty_items'),
-                'width_item' => Configuration::get($this->name . '_width_item'),
-                'show_nexback' => Configuration::get($this->name . '_show_nextback'),
-                'show_control' => Configuration::get($this->name . '_show_control'),
-                'min_item' => Configuration::get($this->name . '_min_item'),
-                'max_item' => Configuration::get($this->name . '_max_item'),
-                'mode_dir' => Configuration::get($this->name . '_mode_dir'),
-				);    
-
-
-            $logos = $this->getLogo();
-            if(count($logos)<1) return NULL;
-            $this->context->smarty->assign('slideOptions', $options);
-            $this->context->smarty->assign('logos', $logos);
-            return $this->display(__FILE__, 'logo.tpl');
-	}
-	public function hookDisplayBlockPosition4($params) {
-        return $this->hookDisplayBlockPosition3($params);
+	public function hookdisplayBlockPosition1($params) {
+        return $this->hookdisplayBrandSlider($params);
     }
-	public function hookDisplayBlockPosition2($params) {
-        return $this->hookDisplayBlockPosition3($params);
-    }
-	public function hookDisplayBlockPosition5($params) {
-        return $this->hookDisplayBlockPosition3($params);
+	public function hookdisplayBlockPosition2($params) {
+        return $this->hookdisplayBrandSlider($params);
     }
 	private function _installHookCustomer(){
 		$hookspos = array(

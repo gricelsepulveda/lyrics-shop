@@ -56,7 +56,7 @@ form#sendComment h3 {
   float: left;
   width: 14px;
   overflow: hidden;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: normal;
 }
 
@@ -70,27 +70,27 @@ form#sendComment h3 {
 }
 
 div.star:after {
-  content: "\f006";
+  content: "\f005";
   font-family: "FontAwesome";
   display: inline-block;
-  color: #b6b6b6;
+  color: #e5e5e5;
 }
 
 div.star.star_on {
   display: block;
 }
 div.star.star_on:after {
-  content: "\f006";
+  content: "\f005";
   font-family: "FontAwesome";
   display: inline-block;
-  color: #f50381;
+  color: #ffc600;
 }
 
 div.star.star_hover:after {
-  content: "\f006";
+  content: "\f005";
   font-family: "FontAwesome";
   display: inline-block;
-  color: #f50381;
+  color: #ffc600;
 }
 
 .rating {
@@ -114,6 +114,7 @@ div.star.star_hover:after {
   float: left;
   margin: 0 1px 0 0;
   width: 14px;
+  height: 16px;
 }
 
 .cancel a, .star a {
@@ -140,7 +141,7 @@ div.star a:hover {
   margin: 0 0 10px;
   padding: 10px;
   border: 1px solid #e6db55;
-  font-size: 13px;
+  font-size: 14px;
   background: none repeat scroll 0 0 lightyellow;
 }
 
@@ -203,16 +204,16 @@ div.star a:hover {
   margin-top: 1px;
 }
 #product_comments_block_extra div.star:after {
-  content: "\f006";
+  content: "\f005";
   font-family: "FontAwesome";
   display: inline-block;
-  color: #b6b6b6;
+  color: #e5e5e5;
 }
 #product_comments_block_extra div.star_on:after {
-  content: "\f006";
+  content: "\f005";
   font-family: "FontAwesome";
   display: inline-block;
-  color: #f50381;
+  color: #ffc600;
 }
 #product_comments_block_extra .comments_advices {
   display: inline-block;
@@ -242,6 +243,9 @@ div.star a:hover {
   cursor: pointer;
   display: inline-block;
 }
+.comments_advices a:hover{
+	color:$main !important;
+}
 @media (min-width: 768px) and (max-width: 991px) {
   .comments_advices a {
     float: none;
@@ -263,7 +267,7 @@ div.star a:hover {
   content: "\f040";
 }
 .comments_advices a:hover {
-  color: #f50381 !important;
+  color: #ffc600 !important;
 }
 .comments_advices a.reviews {
   margin-right: 9px;
@@ -443,16 +447,16 @@ div.star a:hover {
   }
 }
 #product_comments_block_tab div.star:after {
-  content: "\f006";
+  content: "\f005";
   font-family: "FontAwesome";
   display: inline-block;
-  color: #b6b6b6;
+  color: #e5e5e5;
 }
 #product_comments_block_tab div.star_on:after {
-  content: "\f006";
+  content: "\f005";
   font-family: "FontAwesome";
   display: inline-block;
-  color: #f50381;
+  color: #ffc600;
 }
 #product_comments_block_tab .comment_author_infos {
   clear: both;

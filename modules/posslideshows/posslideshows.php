@@ -40,7 +40,7 @@ class Posslideshows extends Module implements WidgetInterface
     public function install()
     {
 		
-			     // Install Tabs
+	     // Install Tabs
 		$tab = new Tab();		
 		// Need a foreach for the language
 		foreach (Language::getLanguages() as $language)
@@ -110,9 +110,9 @@ class Posslideshows extends Module implements WidgetInterface
      * Adds samples
      */
     protected function installSamples()
-    {
+    {	
         $languages = Language::getLanguages(false);
-        for ($i = 1; $i <= 3; ++$i) {
+        for ($i = 1; $i <= 2; ++$i) {
             $slide = new Slideshow();
             $slide->position = $i;
             $slide->active = 1;
@@ -120,28 +120,28 @@ class Posslideshows extends Module implements WidgetInterface
                 $slide->title[$language['id_lang']] = 'Sample '.$i;
 				if($i==1){
 					$slide->description[$language['id_lang']] = '<div class="info desc1">
-						<p class="title1">Macbook Air</p>
-						<p class="title2">Bestseller Products</p>
-						<p class="title3">Apples lowest-cost notebook starting at $999, available with a 13-inch display.</p>
-						<p class="readmore"><a href="#"><span>shopping Now</span></a></p>
-						</div>';
+					<div class="container">
+					<p class="title1">3d vr glasses</p>
+					<p class="title2">ledo-vr003</p>
+					<p class="title3">At a price<span>$199</span></p>
+					<p class="readmore"><a href="#"><span>Shop now</span></a></p>
+					</div>
+					</div>';
 				}elseif($i==2){
-					$slide->description[$language['id_lang']] = '<div class="info desc1">
-						<p class="title1">Google Home</p>
-						<p class="title2">New Products 2018</p>
-						<p class="title3">Google Home is a smart speaker developed by Google as part of its "Made By Google" product line.</p>
-						<p class="readmore"><a href="#"><span>shopping Now</span></a></p>
-						</div>';
-				}elseif($i==3){
-					$slide->description[$language['id_lang']] = '<div class="info desc2">
-						<p class="title1">Programas</p>
-						<p class="title2">Para Lavadora Bosch</p>
-						<p class="title3">Washing Tachnology User 6 different wash motions, designed to best care for your clother, just like hand wash.</p>
-						<p class="readmore"><a href="#"><span>shopping Now</span></a></p>
-						</div>';
-				}else{
+					$slide->description[$language['id_lang']] = '<div class="info desc1 desc2">
+					<div class="container">
+					<p class="title1">Nx80 Wireless</p>
+					<p class="title2">Headphones</p>
+					<p class="title3">get up to<span>30% off</span></p>
+					<p class="readmore"><a href="#"><span>Shop now</span></a></p>
+					</div>
+					</div>';
+				}
+				
+				else{
 					$slide->description[$language['id_lang']] = '';
 				}
+				$slide->description[$language['id_lang']] = htmlentities($slide->description[$language['id_lang']]);
                 $slide->legend[$language['id_lang']] = 'sample-'.$i;
                 $slide->url[$language['id_lang']] = 'http://www.posthemes.com';
                 $slide->image[$language['id_lang']] = 'sample-'.$i.'.jpg';
@@ -220,12 +220,7 @@ class Posslideshows extends Module implements WidgetInterface
      */
     protected function deleteTables()
     {
-        $slides = $this->getSlides();
-        foreach ($slides as $slide) {
-            $to_del = new Slideshow($slide['id_slide']);
-            $to_del->delete();
-        }
-
+      
         return Db::getInstance()->execute('
             DROP TABLE IF EXISTS `'._DB_PREFIX_.'posslideshows`, `'._DB_PREFIX_.'posslideshows_slides`, `'._DB_PREFIX_.'posslideshows_slides_lang`;
         ');
@@ -464,7 +459,7 @@ class Posslideshows extends Module implements WidgetInterface
                 $slide->title[$language['id_lang']] = Tools::getValue('title_'.$language['id_lang']);
                 $slide->url[$language['id_lang']] = Tools::getValue('url_'.$language['id_lang']);
                 $slide->legend[$language['id_lang']] = Tools::getValue('legend_'.$language['id_lang']);
-                $slide->description[$language['id_lang']] = Tools::getValue('description_'.$language['id_lang']);
+                $slide->description[$language['id_lang']] = htmlentities(Tools::getValue('description_'.$language['id_lang']));
 
                 /* Uploads image and sets slide */
                 $type = Tools::strtolower(Tools::substr(strrchr($_FILES['image_'.$language['id_lang']]['name'], '.'), 1));
@@ -560,6 +555,10 @@ class Posslideshows extends Module implements WidgetInterface
     public function getWidgetVariables($hookName = null, array $configuration = [])
     {
         $slides = $this->getSlides(true);
+		foreach($slides as &$slide){
+			$slide['description'] = html_entity_decode($slide['description']);
+			$slide['description'] = str_replace('/pos_kobe/',__PS_BASE_URI__,$slide['description']);
+		}
         if (is_array($slides)) {
             foreach ($slides as &$slide) {
                 $slide['sizes'] = @getimagesize((dirname(__FILE__) . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . $slide['image']));
@@ -985,17 +984,13 @@ class Posslideshows extends Module implements WidgetInterface
 
         $languages = Language::getLanguages(false);
 
-
 		 foreach ($languages as $lang) {
             $fields['image'][$lang['id_lang']] = Tools::getValue('image_'.(int)$lang['id_lang']);
-			if(isset($slide->title[$lang['id_lang']]))
             $fields['title'][$lang['id_lang']] = Tools::getValue('title_'.(int)$lang['id_lang'], $slide->title[$lang['id_lang']]);
-			if(isset($slide->url[$lang['id_lang']]))
-				$fields['url'][$lang['id_lang']] = Tools::getValue('url_'.(int)$lang['id_lang'], $slide->url[$lang['id_lang']]);
-			if(isset($slide->legend[$lang['id_lang']]))
-				$fields['legend'][$lang['id_lang']] = Tools::getValue('legend_'.(int)$lang['id_lang'], $slide->legend[$lang['id_lang']]);
-			if(isset($slide->description[$lang['id_lang']]))
-				$fields['description'][$lang['id_lang']] = Tools::getValue('description_'.(int)$lang['id_lang'], $slide->description[$lang['id_lang']]);
+			$fields['url'][$lang['id_lang']] = Tools::getValue('url_'.(int)$lang['id_lang'], $slide->url[$lang['id_lang']]);
+			$fields['legend'][$lang['id_lang']] = Tools::getValue('legend_'.(int)$lang['id_lang'], $slide->legend[$lang['id_lang']]);
+			$fields['description'][$lang['id_lang']] = html_entity_decode(Tools::getValue('description_'.(int)$lang['id_lang'], $slide->description[$lang['id_lang']]));
+			$fields['description'][$lang['id_lang']] = str_replace('/pos_kobe/',__PS_BASE_URI__,$fields['description'][$lang['id_lang']]);
 		}
 
 

@@ -42,11 +42,11 @@ class Postabproductslider extends Module {
         Configuration::updateValue('POS_HOME_PRODUCTTAB_SPEED', 3000);
         Configuration::updateValue('POS_HOME_PRODUCTTAB_NAV', true);
         Configuration::updateValue('POS_HOME_PRODUCTTAB_PAGINATION', false);
-        Configuration::updateValue('POS_HOME_PRODUCTTAB_ITEMS', 4);
+        Configuration::updateValue('POS_HOME_PRODUCTTAB_ITEMS', 5);
         Configuration::updateValue('POS_HOME_PRODUCTTAB_ROWS', 1);
 
 		return parent :: install()
-			&& $this->registerHook('displayBlockPosition1')
+			&& $this->registerHook('displayBlockPosition3')
 			&& $this->registerHook('header')
 			&& $this->registerHook('tabsProducts');
 	}
@@ -78,7 +78,7 @@ class Postabproductslider extends Module {
     }
     
 	
-	protected function getBestSellers()
+	 protected function getBestSellers()
     {
         if (Configuration::get('PS_CATALOG_MODE')) {
             return false;
@@ -184,12 +184,17 @@ class Postabproductslider extends Module {
 			//Sale Products
 			$products = Product::getPricesDrop((int)$cookie->id_lang, 0, ((int)$nb ? $nb : 20), false);	
 		}elseif($type ==4) {
-			$products = $this->getBestSellers($params);
+			$products = $this->getBestSellers();
+			
 			//Bestseller Products
 		}	
 		
 		$products_for_template = [];			
-		if(count($products)>0) {
+		
+		
+		if($type == 4 ) {
+			$products_for_template = $products; 
+		} else if(isset($products) && $products) {
 			foreach($products as $rawProduct) {
 				
 					 $products_for_template[] = $presenter->present(
@@ -241,12 +246,45 @@ class Postabproductslider extends Module {
 			$this->context->smarty->assign('config', $options);
 		return $this->display(__FILE__, 'producttabslider.tpl');
 	}
-	public function hookDisplayBlockPosition4($params) {
-        return $this->hookDisplayBlockPosition1($params);
-    }
-	public function hookDisplayBlockPosition3($params) {
-        return $this->hookDisplayBlockPosition1($params);
-    }
+	public function hookdisplayBlockPosition3($params) {
+		
+	        $nb = Configuration::get($this->name . '_p_limit');
+			$category = new Category(Context::getContext()->shop->getCategory(), (int) Context::getContext()->language->id);
+			
+			$productTabslider = array();
+			if((int) Configuration::get('POS_HOME_PRODUCTTAB_NEW')) {
+				$newProducts = $this->getProducts($params,2);
+				$productTabslider[] = array('id'=>'new_product', 'name' => $this->l('New Arrival'), 'productInfo' => $newProducts);
+			}
+			if((int) Configuration::get('POS_HOME_PRODUCTTAB_SALE')) {
+				$specialProducts = $this->getProducts($params,3);
+				//echo '<pre>'; print_r($specialProducts); die;
+				ProductSale::fillProductSales();
+				$productTabslider[] = array('id'=> 'special_product','name' => $this->l('OnSale'), 'productInfo' =>  $specialProducts);
+			}
+			if((int) Configuration::get('POS_HOME_PRODUCTTAB_SELLER')) {
+				$bestseller =  $this->getProducts($params,4);
+				$productTabslider[] = array('id'=>'besseller_product','name' => $this->l('Bestseller'), 'productInfo' =>  $bestseller);
+			}
+			if((int) Configuration::get('POS_HOME_PRODUCTTAB_FEATURE')) {
+				$featureProduct = $this->getProducts($params,1);
+				$productTabslider[] = array('id'=>'feature_product','name' => $this->l('Featured Products'), 'productInfo' =>  $featureProduct);
+			}
+			$options = $this->getConfigFieldsValues();
+
+            $this->smarty->assign(array(
+                'add_prod_display' => Configuration::get('PS_ATTRIBUTE_CATEGORY_DISPLAY'),
+				'tab_effect' => Configuration::get($this->name . '_tab_effect'),
+	
+            ));
+			
+			if(count($productTabslider) <1) return;
+			$this->context->smarty->assign('productTabslider', $productTabslider);
+			$this->context->smarty->assign('config', $options);
+		return $this->display(__FILE__, 'producttabslider.tpl');
+	}
+	
+	
 	  public function getContent() {
         $output = '<h2>' . $this->displayName . '</h2>';
         if (Tools::isSubmit('submitPosTabProduct')) {

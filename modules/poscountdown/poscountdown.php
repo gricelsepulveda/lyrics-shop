@@ -49,7 +49,7 @@ class Poscountdown extends Module
         $this->context->controller->addJS($this->_path . 'js/jquery.plugin.js');
          $this->context->controller->addJS($this->_path . 'js/jquery.countdown.js');
          $this->context->controller->addJS($this->_path . 'js/poscountdown.js');
-        // $this->context->controller->addCSS($this->_path . 'css/jquery.countdown.css');
+        //$this->context->controller->addCSS($this->_path . 'css/jquery.countdown.css');
     }
 
     public function hooktimecountdown($params)

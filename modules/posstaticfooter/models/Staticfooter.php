@@ -59,7 +59,7 @@ class Staticfooter extends ObjectModel
                        $blockModule = $this->getModuleAssign($nameModule, $hookModule);
                        $ob['block_module'] = $blockModule;
 		       $description = $ob['description'];
-			$description = str_replace('/posthemes/pos_digitech/',__PS_BASE_URI__,$description);
+			$description = str_replace('/pos_ororus/',__PS_BASE_URI__,$description);
 			$ob['description'] = $description;
                       // array_push($ob, $blockModule);
 			if($ob['is_default'] ==1) {

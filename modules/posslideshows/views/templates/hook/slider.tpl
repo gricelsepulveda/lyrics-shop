@@ -1,5 +1,5 @@
 {if $homeslider.slides}
-<div class="slideshow_container">
+<div class="slideshow_container col-xs-12 col-md-12 col-lg-8">
 	<div class="pos-slideshow">
 		<div class="flexslider ma-nivoslider">
 			<div class="pos-loading"></div>
@@ -12,15 +12,12 @@
 			</div>
 			{if $homeslider.show_caption != 0}
 				{foreach from=$homeslider.slides key=key item=slide}
-					<div id="htmlcaption{$slide.id_slide}" class="pos-slideshow-caption nivo-html-caption nivo-caption">
-							{if $slide.description}
-							<div class="banner7-des"><div class="container">{$slide.description nofilter}</div> </div>
-							{/if}
+					<div id="htmlcaption{$slide.id_slide}" class="pos-slideshow-caption nivo-html-caption nivo-caption">					
 							<div class="timethai" style=" 
 								position:absolute;
 								top:0;
 								left:0;
-								z-index:9;
+								z-index:8;
 								background-color: rgba(49, 56, 72, 0.298);
 								height:5px;
 								-webkit-animation: myfirst {$homeslider.speed}ms ease-in-out;
@@ -30,7 +27,9 @@
 							
 							">
 							</div>
-						
+							{if $slide.description}
+							<div class="banner7-des"><div class="container">{$slide.description nofilter}</div> </div>
+							{/if}
 					</div>
 				 {/foreach}
 			 {/if}

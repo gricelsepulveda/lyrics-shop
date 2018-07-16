@@ -260,6 +260,26 @@ class posstaticblocks extends Module {
         ));
        return $this->display(__FILE__, 'block.tpl');
     }
+	public function hookdisplayBlockPosition6($param) {
+        $id_shop = (int)Context::getContext()->shop->id;
+        $staticBlocks = $this->_staticModel->getStaticblockLists($id_shop,'displayBlockPosition6');
+        if(count($staticBlocks)<1) return null;
+        //if(is_array($staticBlocks))
+        $this->smarty->assign(array(
+            'staticblocks' => $staticBlocks,
+        ));
+       return $this->display(__FILE__, 'block.tpl');
+    }
+		public function hookdisplayBlockPosition7($param) {
+        $id_shop = (int)Context::getContext()->shop->id;
+        $staticBlocks = $this->_staticModel->getStaticblockLists($id_shop,'displayBlockPosition7');
+        if(count($staticBlocks)<1) return null;
+        //if(is_array($staticBlocks))
+        $this->smarty->assign(array(
+            'staticblocks' => $staticBlocks,
+        ));
+       return $this->display(__FILE__, 'block.tpl');
+    }
     public function hookBannerSequence($param) {
         $id_shop = (int)Context::getContext()->shop->id;
         $staticBlocks = $this->_staticModel->getStaticblockLists($id_shop,'bannerSequence');
