@@ -1,4 +1,4 @@
-<?php /*%%SmartyHeaderCode:8017261415b4421a8d11018-79872463%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:4907399845b4ce0a8897975-92754758%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -9,7 +9,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'module',
     ),
   ),
-  'nocache_hash' => '8017261415b4421a8d11018-79872463',
+  'nocache_hash' => '4907399845b4ce0a8897975-92754758',
   'variables' => 
   array (
     'my_account_urls' => 0,
@@ -17,10 +17,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5b4421a8d37ef4_77535225',
+  'unifunc' => 'content_5b4ce0a88ae0d9_00498657',
   'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5b4421a8d37ef4_77535225')) {function content_5b4421a8d37ef4_77535225($_smarty_tpl) {?><div id="block_myaccount_infos" class="col-xs-12 col-md-2 col-lg-3 col-xl-3 links wrapper">
+<?php if ($_valid && !is_callable('content_5b4ce0a88ae0d9_00498657')) {function content_5b4ce0a88ae0d9_00498657($_smarty_tpl) {?><div id="block_myaccount_infos" class="col-xs-12 col-md-2 col-lg-3 col-xl-3 links wrapper">
 	<div class="footer_block">
   <h3 class="footer_header">
       Su cuenta

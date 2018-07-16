@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2018-07-10 15:14:30
+<?php /* Smarty version Smarty-3.1.19, created on 2018-07-16 14:15:02
          compiled from "/home/lyricscl/meeta.online/themes/theme_digitech3/templates/index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:13255285625b4505960bce19-44049840%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:10957868525b4ce0a6931683-56376172%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -77,7 +77,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '13255285625b4505960bce19-44049840',
+  'nocache_hash' => '10957868525b4ce0a6931683-56376172',
   'function' => 
   array (
   ),
@@ -89,9 +89,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5b4505963cb745_79240841',
+  'unifunc' => 'content_5b4ce0a6b4ee86_21486255',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5b4505963cb745_79240841')) {function content_5b4505963cb745_79240841($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5b4ce0a6b4ee86_21486255')) {function content_5b4ce0a6b4ee86_21486255($_smarty_tpl) {?>
 <!doctype html>
 <html lang="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['language']->value['iso_code'], ENT_QUOTES, 'UTF-8');?>
 ">
@@ -100,8 +100,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     
       <?php /*  Call merged included template "_partials/head.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
- $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('_partials/head.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '13255285625b4505960bce19-44049840');
-content_5b4505961b19c9_77864620($_smarty_tpl);
+ $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('_partials/head.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '10957868525b4ce0a6931683-56376172');
+content_5b4ce0a696de10_13520017($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "_partials/head.tpl" */?>
     
@@ -117,8 +117,8 @@ $_smarty_tpl = array_pop($_tpl_stack);
       
         <?php /*  Call merged included template "catalog/_partials/product-activation.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
- $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('catalog/_partials/product-activation.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '13255285625b4505960bce19-44049840');
-content_5b450596263892_40904988($_smarty_tpl);
+ $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('catalog/_partials/product-activation.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '10957868525b4ce0a6931683-56376172');
+content_5b4ce0a6a0d639_17362871($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "catalog/_partials/product-activation.tpl" */?>
       
@@ -126,8 +126,8 @@ $_smarty_tpl = array_pop($_tpl_stack);
         
           <?php /*  Call merged included template "_partials/header.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
- $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('_partials/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '13255285625b4505960bce19-44049840');
-content_5b4505962777f2_87323292($_smarty_tpl);
+ $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('_partials/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '10957868525b4ce0a6931683-56376172');
+content_5b4ce0a6a2f962_01643662($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "_partials/header.tpl" */?>
         
@@ -163,8 +163,8 @@ $_smarty_tpl = array_pop($_tpl_stack);
       
         <?php /*  Call merged included template "_partials/notifications.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
- $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('_partials/notifications.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '13255285625b4505960bce19-44049840');
-content_5b4505962a8547_12450128($_smarty_tpl);
+ $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('_partials/notifications.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '10957868525b4ce0a6931683-56376172');
+content_5b4ce0a6a58321_57912955($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "_partials/notifications.tpl" */?>
       
@@ -176,8 +176,8 @@ $_smarty_tpl = array_pop($_tpl_stack);
 				
 					<?php /*  Call merged included template "_partials/breadcrumb.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
- $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('_partials/breadcrumb.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '13255285625b4505960bce19-44049840');
-content_5b4505962fe374_89008363($_smarty_tpl);
+ $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('_partials/breadcrumb.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '10957868525b4ce0a6931683-56376172');
+content_5b4ce0a6a9c267_72090397($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "_partials/breadcrumb.tpl" */?>
 				
@@ -228,8 +228,8 @@ $_smarty_tpl = array_pop($_tpl_stack);
         
           <?php /*  Call merged included template "_partials/footer.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
- $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate("_partials/footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '13255285625b4505960bce19-44049840');
-content_5b4505963c0a82_30171763($_smarty_tpl);
+ $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate("_partials/footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0, '10957868525b4ce0a6931683-56376172');
+content_5b4ce0a6b44436_99674847($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "_partials/footer.tpl" */?>
         
@@ -246,9 +246,9 @@ $_smarty_tpl = array_pop($_tpl_stack);
   </body>
 </html>
 <?php }} ?>
-<?php /* Smarty version Smarty-3.1.19, created on 2018-07-10 15:14:30
+<?php /* Smarty version Smarty-3.1.19, created on 2018-07-16 14:15:02
          compiled from "/home/lyricscl/meeta.online/themes/theme_digitech3/templates/_partials/head.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_5b4505961b19c9_77864620')) {function content_5b4505961b19c9_77864620($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5b4ce0a696de10_13520017')) {function content_5b4ce0a696de10_13520017($_smarty_tpl) {?>
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 
@@ -281,8 +281,8 @@ $_smarty_tpl = array_pop($_tpl_stack);
 
   <?php /*  Call merged included template "_partials/stylesheets.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
- $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate("_partials/stylesheets.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('stylesheets'=>$_smarty_tpl->tpl_vars['stylesheets']->value), 0, '13255285625b4505960bce19-44049840');
-content_5b4505961ebfc5_89425074($_smarty_tpl);
+ $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate("_partials/stylesheets.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('stylesheets'=>$_smarty_tpl->tpl_vars['stylesheets']->value), 0, '10957868525b4ce0a6931683-56376172');
+content_5b4ce0a69acd21_29664982($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "_partials/stylesheets.tpl" */?>
 
@@ -290,8 +290,8 @@ $_smarty_tpl = array_pop($_tpl_stack);
 
   <?php /*  Call merged included template "_partials/javascript.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
- $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate("_partials/javascript.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('javascript'=>$_smarty_tpl->tpl_vars['javascript']->value['head'],'vars'=>$_smarty_tpl->tpl_vars['js_custom_vars']->value), 0, '13255285625b4505960bce19-44049840');
-content_5b45059620f6b9_87905783($_smarty_tpl);
+ $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate("_partials/javascript.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('javascript'=>$_smarty_tpl->tpl_vars['javascript']->value['head'],'vars'=>$_smarty_tpl->tpl_vars['js_custom_vars']->value), 0, '10957868525b4ce0a6931683-56376172');
+content_5b4ce0a69cbd61_69314187($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "_partials/javascript.tpl" */?>
 
@@ -299,8 +299,8 @@ $_smarty_tpl = array_pop($_tpl_stack);
 
   <?php /*  Call merged included template "_partials/javascript.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
- $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate("_partials/javascript.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('javascript'=>$_smarty_tpl->tpl_vars['javascript']->value['bottom']), 0, '13255285625b4505960bce19-44049840');
-content_5b45059620f6b9_87905783($_smarty_tpl);
+ $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate("_partials/javascript.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('javascript'=>$_smarty_tpl->tpl_vars['javascript']->value['bottom']), 0, '10957868525b4ce0a6931683-56376172');
+content_5b4ce0a69cbd61_69314187($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "_partials/javascript.tpl" */?>
 
@@ -310,9 +310,9 @@ $_smarty_tpl = array_pop($_tpl_stack);
 
 
 <?php }} ?>
-<?php /* Smarty version Smarty-3.1.19, created on 2018-07-10 15:14:30
+<?php /* Smarty version Smarty-3.1.19, created on 2018-07-16 14:15:02
          compiled from "/home/lyricscl/meeta.online/themes/theme_digitech3/templates/_partials/stylesheets.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_5b4505961ebfc5_89425074')) {function content_5b4505961ebfc5_89425074($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5b4ce0a69acd21_29664982')) {function content_5b4ce0a69acd21_29664982($_smarty_tpl) {?>
 <?php  $_smarty_tpl->tpl_vars['stylesheet'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['stylesheet']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['stylesheets']->value['external']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['stylesheet']->key => $_smarty_tpl->tpl_vars['stylesheet']->value) {
@@ -334,9 +334,9 @@ $_smarty_tpl->tpl_vars['stylesheet']->_loop = true;
   </style>
 <?php } ?>
 <?php }} ?>
-<?php /* Smarty version Smarty-3.1.19, created on 2018-07-10 15:14:30
+<?php /* Smarty version Smarty-3.1.19, created on 2018-07-16 14:15:02
          compiled from "/home/lyricscl/meeta.online/themes/theme_digitech3/templates/_partials/javascript.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_5b45059620f6b9_87905783')) {function content_5b45059620f6b9_87905783($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5b4ce0a69cbd61_69314187')) {function content_5b4ce0a69cbd61_69314187($_smarty_tpl) {?>
 <?php  $_smarty_tpl->tpl_vars['js'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['js']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['javascript']->value['external']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['js']->key => $_smarty_tpl->tpl_vars['js']->value) {
@@ -374,9 +374,9 @@ $_smarty_tpl->tpl_vars['var_value']->_loop = true;
   </script>
 <?php }?>
 <?php }} ?>
-<?php /* Smarty version Smarty-3.1.19, created on 2018-07-10 15:14:30
+<?php /* Smarty version Smarty-3.1.19, created on 2018-07-16 14:15:02
          compiled from "/home/lyricscl/meeta.online/themes/theme_digitech3/templates/catalog/_partials/product-activation.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_5b450596263892_40904988')) {function content_5b450596263892_40904988($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5b4ce0a6a0d639_17362871')) {function content_5b4ce0a6a0d639_17362871($_smarty_tpl) {?>
 <?php if ($_smarty_tpl->tpl_vars['page']->value['admin_notifications']) {?>
   <div class="alert alert-warning row" role="alert">
     <div class="container">
@@ -397,9 +397,9 @@ $_smarty_tpl->tpl_vars['notif']->_loop = true;
   </div>
 <?php }?>
 <?php }} ?>
-<?php /* Smarty version Smarty-3.1.19, created on 2018-07-10 15:14:30
+<?php /* Smarty version Smarty-3.1.19, created on 2018-07-16 14:15:02
          compiled from "/home/lyricscl/meeta.online/themes/theme_digitech3/templates/_partials/header.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_5b4505962777f2_87323292')) {function content_5b4505962777f2_87323292($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5b4ce0a6a2f962_01643662')) {function content_5b4ce0a6a2f962_01643662($_smarty_tpl) {?>
 
   <nav class="header-nav">
     <div class="container">
@@ -448,9 +448,9 @@ $_smarty_tpl->tpl_vars['notif']->_loop = true;
 
 
 <?php }} ?>
-<?php /* Smarty version Smarty-3.1.19, created on 2018-07-10 15:14:30
+<?php /* Smarty version Smarty-3.1.19, created on 2018-07-16 14:15:02
          compiled from "/home/lyricscl/meeta.online/themes/theme_digitech3/templates/_partials/notifications.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_5b4505962a8547_12450128')) {function content_5b4505962a8547_12450128($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5b4ce0a6a58321_57912955')) {function content_5b4ce0a6a58321_57912955($_smarty_tpl) {?>
 
 <?php if (isset($_smarty_tpl->tpl_vars['notifications']->value)) {?>
 <aside id="notifications">
@@ -526,9 +526,9 @@ $_smarty_tpl->tpl_vars['notif']->_loop = true;
 </aside>
 <?php }?>
 <?php }} ?>
-<?php /* Smarty version Smarty-3.1.19, created on 2018-07-10 15:14:30
+<?php /* Smarty version Smarty-3.1.19, created on 2018-07-16 14:15:02
          compiled from "/home/lyricscl/meeta.online/themes/theme_digitech3/templates/_partials/breadcrumb.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_5b4505962fe374_89008363')) {function content_5b4505962fe374_89008363($_smarty_tpl) {?><?php if ($_smarty_tpl->tpl_vars['breadcrumb']->value['count']!=1) {?>
+<?php if ($_valid && !is_callable('content_5b4ce0a6a9c267_72090397')) {function content_5b4ce0a6a9c267_72090397($_smarty_tpl) {?><?php if ($_smarty_tpl->tpl_vars['breadcrumb']->value['count']!=1) {?>
 <?php if ($_smarty_tpl->tpl_vars['page']->value['page_name']=='category') {?>
 <?php if ($_smarty_tpl->tpl_vars['category']->value['image']) {?>
 	<div class="category-cover">
@@ -565,9 +565,9 @@ $_smarty_tpl->tpl_vars['path']->_loop = true;
 	</div>
 </div>
 <?php }?><?php }} ?>
-<?php /* Smarty version Smarty-3.1.19, created on 2018-07-10 15:14:30
+<?php /* Smarty version Smarty-3.1.19, created on 2018-07-16 14:15:02
          compiled from "/home/lyricscl/meeta.online/themes/theme_digitech3/templates/_partials/footer.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_5b4505963c0a82_30171763')) {function content_5b4505963c0a82_30171763($_smarty_tpl) {?><div class="footer-top">
+<?php if ($_valid && !is_callable('content_5b4ce0a6b44436_99674847')) {function content_5b4ce0a6b44436_99674847($_smarty_tpl) {?><div class="footer-top">
 	<div class="container">
 		<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['hook'][0][0]->smartyHook(array('h'=>'displayFooterBefore'),$_smarty_tpl);?>
 

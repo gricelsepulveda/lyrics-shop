@@ -1,4 +1,4 @@
-<?php /*%%SmartyHeaderCode:12224996435b4421a8cce1e5-62855092%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:13519004895b4ce0a885a1c9-51813133%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -9,7 +9,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'module',
     ),
   ),
-  'nocache_hash' => '12224996435b4421a8cce1e5-62855092',
+  'nocache_hash' => '13519004895b4ce0a885a1c9-51813133',
   'variables' => 
   array (
     'linkBlocks' => 0,
@@ -19,12 +19,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5b4421a8d03068_61756653',
+  'unifunc' => 'content_5b4ce0a8880318_44252547',
   'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5b4421a8d03068_61756653')) {function content_5b4421a8d03068_61756653($_smarty_tpl) {?><div class="footer_block col-xs-12 col-sm-12 col-md-3 col-lg-2 col-xl-2 wrapper">
+<?php if ($_valid && !is_callable('content_5b4ce0a8880318_44252547')) {function content_5b4ce0a8880318_44252547($_smarty_tpl) {?><div class="footer_block col-xs-12 col-sm-12 col-md-3 col-lg-2 col-xl-2 wrapper">
   <h3 class="footer_header">Products</h3>
-    <ul class="footer_list toggle-footer" id="footer_sub_menu_11403">
+    <ul class="footer_list toggle-footer" id="footer_sub_menu_46704">
 		  <li>
 		<a
 			id="link-product-page-prices-drop-1"
@@ -56,7 +56,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 </div>
 <div class="footer_block col-xs-12 col-sm-12 col-md-3 col-lg-2 col-xl-2 wrapper">
   <h3 class="footer_header">Our company</h3>
-    <ul class="footer_list toggle-footer" id="footer_sub_menu_28845">
+    <ul class="footer_list toggle-footer" id="footer_sub_menu_13842">
 		  <li>
 		<a
 			id="link-cms-page-1-2"

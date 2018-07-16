@@ -1,4 +1,4 @@
-<?php /*%%SmartyHeaderCode:12224996435b4421a8cce1e5-62855092%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:13519004895b4ce0a885a1c9-51813133%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -9,15 +9,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'module',
     ),
   ),
-  'nocache_hash' => '12224996435b4421a8cce1e5-62855092',
+  'nocache_hash' => '13519004895b4ce0a885a1c9-51813133',
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5b452469c079b2_63154252',
+  'unifunc' => 'content_5b4ce9bc81a6d3_22781700',
   'has_nocache_code' => false,
   'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5b452469c079b2_63154252')) {function content_5b452469c079b2_63154252($_smarty_tpl) {?><div class="footer_block col-xs-12 col-sm-12 col-md-3 col-lg-2 col-xl-2 wrapper">
+<?php if ($_valid && !is_callable('content_5b4ce9bc81a6d3_22781700')) {function content_5b4ce9bc81a6d3_22781700($_smarty_tpl) {?><div class="footer_block col-xs-12 col-sm-12 col-md-3 col-lg-2 col-xl-2 wrapper">
   <h3 class="footer_header">Products</h3>
-    <ul class="footer_list toggle-footer" id="footer_sub_menu_89268">
+    <ul class="footer_list toggle-footer" id="footer_sub_menu_26170">
 		  <li>
 		<a
 			id="link-product-page-prices-drop-1"
@@ -49,7 +49,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 </div>
 <div class="footer_block col-xs-12 col-sm-12 col-md-3 col-lg-2 col-xl-2 wrapper">
   <h3 class="footer_header">Our company</h3>
-    <ul class="footer_list toggle-footer" id="footer_sub_menu_29950">
+    <ul class="footer_list toggle-footer" id="footer_sub_menu_74798">
 		  <li>
 		<a
 			id="link-cms-page-1-2"

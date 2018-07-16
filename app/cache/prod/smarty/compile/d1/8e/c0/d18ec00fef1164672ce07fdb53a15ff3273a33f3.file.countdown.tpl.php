@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2018-07-10 15:14:31
+<?php /* Smarty version Smarty-3.1.19, created on 2018-07-16 14:15:03
          compiled from "modules/poscountdown/views/templates/hook/countdown.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:10578343805b4505973f2e56-70256642%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:3655869835b4ce0a7626323-36353279%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '10578343805b4505973f2e56-70256642',
+  'nocache_hash' => '3655869835b4ce0a7626323-36353279',
   'function' => 
   array (
   ),
@@ -23,9 +23,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5b450597418776_36810310',
+  'unifunc' => 'content_5b4ce0a7651a51_26102241',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5b450597418776_36810310')) {function content_5b450597418776_36810310($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include '/home/lyricscl/meeta.online/vendor/prestashop/smarty/plugins/modifier.date_format.php';
+<?php if ($_valid && !is_callable('content_5b4ce0a7651a51_26102241')) {function content_5b4ce0a7651a51_26102241($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_date_format')) include '/home/lyricscl/meeta.online/vendor/prestashop/smarty/plugins/modifier.date_format.php';
 ?><?php if ($_smarty_tpl->tpl_vars['enddate']->value!=null&&$_smarty_tpl->tpl_vars['enddate']->value>0) {?>
 <div class='time_count_down'>
     <span class="future_date_<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['id_cate']->value, ENT_QUOTES, 'UTF-8');?>

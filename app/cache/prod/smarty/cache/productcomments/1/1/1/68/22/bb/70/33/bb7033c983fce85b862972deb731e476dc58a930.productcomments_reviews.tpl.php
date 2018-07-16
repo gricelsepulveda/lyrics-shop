@@ -1,4 +1,4 @@
-<?php /*%%SmartyHeaderCode:21123004255b4421a896e441-90865602%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:16046354915b4ce0a75c4af6-97560161%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -9,13 +9,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '21123004255b4421a896e441-90865602',
+  'nocache_hash' => '16046354915b4ce0a75c4af6-97560161',
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5b45249f976381_54653558',
+  'unifunc' => 'content_5b4ce9bc53f196_56771590',
   'has_nocache_code' => false,
   'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5b45249f976381_54653558')) {function content_5b45249f976381_54653558($_smarty_tpl) {?>	<div itemtype="http://schema.org/AggregateRating" itemscope="" itemprop="aggregateRating" class="comments_note">	
+<?php if ($_valid && !is_callable('content_5b4ce9bc53f196_56771590')) {function content_5b4ce9bc53f196_56771590($_smarty_tpl) {?>	<div itemtype="http://schema.org/AggregateRating" itemscope="" itemprop="aggregateRating" class="comments_note">	
 	<div class="star_content clearfix">
 	<div class="star "></div>
 	<div class="star "></div>

@@ -1,0 +1,13 @@
+1531770997
+s:1436:"HTTP/1.1 200 OK
+Server: nginx
+Date: Mon, 16 Jul 2018 17:55:52 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1125
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+X-UA-Compatible: IE=Edge,chrome=1
+Strict-Transport-Security: max-age=0
+
+{"modules":[{"id":"15252","name":"dashproducts","displayName":"Dashboard Products","categoryName":"Natif","description":"Agrega un bloque con una tabla de sus &uacute;ltimos pedidos y una clasificaci&oacute;n de sus productos","author":"PrestaShop","url":"https:\/\/addons.prestashop.com\/product.php?id_product=15252?utm_source=back-office&utm_medium=push-addons&utm_campaign=back-office-ES&utm_content=download","serviceUrl":"","img":"https:\/\/medias1.prestastore.com\/img\/pico\/15252.jpg","fullDescription":"Agrega un bloque con una tabla de sus &uacute;ltimos pedidos y una clasificaci&oacute;n de sus productos.","additionalDescription":"","features":"","customer_benefits":"","demo_video":"","version":"2.0.3","last_update":"2018-07-16 05:02:44","compatibility":{"from":"1.7.1.0","to":"1.7.4.1"},"price":{"EUR":0,"USD":0,"GBP":0},"badges":[{"label":"Made by PrestaShop","img":"https:\/\/medias2.prestastore.com\/themes\/prestastore\/img\/front\/sprites\/badges\/made-by-prestashop.png"}],"cover":{"small":"https:\/\/api-addons.prestashop.com\/-pprod\/.jpg","big":"https:\/\/api-addons.prestashop.com\/-pbig\/.jpg"}}]}";

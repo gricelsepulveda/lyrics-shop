@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2018-07-10 15:14:31
+<?php /* Smarty version Smarty-3.1.19, created on 2018-07-16 14:15:03
          compiled from "/home/lyricscl/meeta.online/themes/theme_digitech3/templates/catalog/_partials/miniatures/product.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:15558950635b45059780e598-61136978%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:12006412175b4ce0a7be1527-01954343%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -17,7 +17,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '15558950635b45059780e598-61136978',
+  'nocache_hash' => '12006412175b4ce0a7be1527-01954343',
   'function' => 
   array (
   ),
@@ -28,9 +28,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5b450597941754_86831495',
+  'unifunc' => 'content_5b4ce0a7cd2b34_85640228',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5b450597941754_86831495')) {function content_5b450597941754_86831495($_smarty_tpl) {?><article class="js-product-miniature item_in" data-id-product="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id_product'], ENT_QUOTES, 'UTF-8');?>
+<?php if ($_valid && !is_callable('content_5b4ce0a7cd2b34_85640228')) {function content_5b4ce0a7cd2b34_85640228($_smarty_tpl) {?><article class="js-product-miniature item_in" data-id-product="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id_product'], ENT_QUOTES, 'UTF-8');?>
 " data-id-product-attribute="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['product']->value['id_product_attribute'], ENT_QUOTES, 'UTF-8');?>
 " itemscope itemtype="http://schema.org/Product">
 	<div class="item-inner">
@@ -141,8 +141,8 @@ $_smarty_tpl->tpl_vars['flag']->_loop = true;
 				<?php if ($_smarty_tpl->tpl_vars['product']->value['main_variants']) {?>
 				  <?php /*  Call merged included template "catalog/_partials/variant-links.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
- $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('catalog/_partials/variant-links.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('variants'=>$_smarty_tpl->tpl_vars['product']->value['main_variants']), 0, '15558950635b45059780e598-61136978');
-content_5b45059791ac64_28044593($_smarty_tpl);
+ $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('catalog/_partials/variant-links.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array('variants'=>$_smarty_tpl->tpl_vars['product']->value['main_variants']), 0, '12006412175b4ce0a7be1527-01954343');
+content_5b4ce0a7cac5f0_99985361($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); 
 /*  End of included template "catalog/_partials/variant-links.tpl" */?>
 				<?php }?>
@@ -151,9 +151,9 @@ $_smarty_tpl = array_pop($_tpl_stack);
     </div>
 </article>
 <?php }} ?>
-<?php /* Smarty version Smarty-3.1.19, created on 2018-07-10 15:14:31
+<?php /* Smarty version Smarty-3.1.19, created on 2018-07-16 14:15:03
          compiled from "/home/lyricscl/meeta.online/themes/theme_digitech3/templates/catalog/_partials/variant-links.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_5b45059791ac64_28044593')) {function content_5b45059791ac64_28044593($_smarty_tpl) {?><div class="variant-links">
+<?php if ($_valid && !is_callable('content_5b4ce0a7cac5f0_99985361')) {function content_5b4ce0a7cac5f0_99985361($_smarty_tpl) {?><div class="variant-links">
   <?php  $_smarty_tpl->tpl_vars['variant'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['variant']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['variants']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['variant']->key => $_smarty_tpl->tpl_vars['variant']->value) {

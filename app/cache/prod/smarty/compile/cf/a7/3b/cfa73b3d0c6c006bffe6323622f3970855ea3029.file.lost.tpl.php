@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2018-07-09 22:52:23
+<?php /* Smarty version Smarty-3.1.19, created on 2018-07-16 14:14:30
          compiled from "/home/lyricscl/meeta.online/modules/welcome/views/templates/lost.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:5314997965b441f67984772-37362782%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:20473445505b4ce086406df8-08267671%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,15 +11,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '5314997965b441f67984772-37362782',
+  'nocache_hash' => '20473445505b4ce086406df8-08267671',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5b441f67990fe3_86278642',
+  'unifunc' => 'content_5b4ce086411da1_92984546',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5b441f67990fe3_86278642')) {function content_5b441f67990fe3_86278642($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5b4ce086411da1_92984546')) {function content_5b4ce086411da1_92984546($_smarty_tpl) {?>
 
 <div class="onboarding onboarding-popup bootstrap">
   <div class="content">

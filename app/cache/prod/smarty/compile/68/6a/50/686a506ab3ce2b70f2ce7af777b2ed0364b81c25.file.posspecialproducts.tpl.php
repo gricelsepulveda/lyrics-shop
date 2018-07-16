@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2018-07-10 15:14:31
+<?php /* Smarty version Smarty-3.1.19, created on 2018-07-16 14:15:03
          compiled from "/home/lyricscl/meeta.online/themes/theme_digitech3/modules/posspecialproducts/posspecialproducts.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:235054215b450597258958-12154675%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:8772600835b4ce0a74ed5c9-56330722%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '235054215b450597258958-12154675',
+  'nocache_hash' => '8772600835b4ce0a74ed5c9-56330722',
   'function' => 
   array (
   ),
@@ -25,9 +25,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5b4505973ab578_15978973',
+  'unifunc' => 'content_5b4ce0a759d0e8_91695463',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5b4505973ab578_15978973')) {function content_5b4505973ab578_15978973($_smarty_tpl) {?><?php if (count($_smarty_tpl->tpl_vars['products']->value)>0&&$_smarty_tpl->tpl_vars['products']->value!=null) {?>
+<?php if ($_valid && !is_callable('content_5b4ce0a759d0e8_91695463')) {function content_5b4ce0a759d0e8_91695463($_smarty_tpl) {?><?php if (count($_smarty_tpl->tpl_vars['products']->value)>0&&$_smarty_tpl->tpl_vars['products']->value!=null) {?>
 <div class="pos_special_product">
 	<div class="pos_title">
 		<h2><?php echo smartyTranslate(array('s'=>'Deal of the day','mod'=>'posspecialproducts'),$_smarty_tpl);?>

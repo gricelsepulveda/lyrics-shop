@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2018-07-10 15:14:31
+<?php /* Smarty version Smarty-3.1.19, created on 2018-07-16 14:15:04
          compiled from "module:posbestsellers/posbestsellers.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:5646903665b450597f3a7e0-42920010%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:18245720945b4ce0a849fc73-02776199%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'module',
     ),
   ),
-  'nocache_hash' => '5646903665b450597f3a7e0-42920010',
+  'nocache_hash' => '18245720945b4ce0a849fc73-02776199',
   'function' => 
   array (
   ),
@@ -25,9 +25,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5b4505980acf48_26171810',
+  'unifunc' => 'content_5b4ce0a8546a22_85905737',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5b4505980acf48_26171810')) {function content_5b4505980acf48_26171810($_smarty_tpl) {?><div class="col-lg-4 col-md-4 col-xs-12">
+<?php if ($_valid && !is_callable('content_5b4ce0a8546a22_85905737')) {function content_5b4ce0a8546a22_85905737($_smarty_tpl) {?><div class="col-lg-4 col-md-4 col-xs-12">
 	<div class="pos_bestseller_product product_block_container">
 		<div class="pos_title">
 			<h2><?php echo smartyTranslate(array('s'=>'bestseller products','mod'=>'posbestsellers'),$_smarty_tpl);?>

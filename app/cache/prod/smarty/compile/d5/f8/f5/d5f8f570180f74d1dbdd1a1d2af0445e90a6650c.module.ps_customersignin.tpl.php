@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2018-07-09 23:01:59
+<?php /* Smarty version Smarty-3.1.19, created on 2018-07-16 14:15:02
          compiled from "module:ps_customersignin/ps_customersignin.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:5730986065b4421a7e77f14-64400833%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:20091595205b4ce0a6bcf309-06250096%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'module',
     ),
   ),
-  'nocache_hash' => '5730986065b4421a7e77f14-64400833',
+  'nocache_hash' => '20091595205b4ce0a6bcf309-06250096',
   'function' => 
   array (
   ),
@@ -24,9 +24,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_5b4421a7e97e28_44050096',
+  'unifunc' => 'content_5b4ce0a6bee7d6_32895967',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_5b4421a7e97e28_44050096')) {function content_5b4421a7e97e28_44050096($_smarty_tpl) {?><div id="user_info_top" class="setting_top dropdown js-dropdown">
+<?php if ($_valid && !is_callable('content_5b4ce0a6bee7d6_32895967')) {function content_5b4ce0a6bee7d6_32895967($_smarty_tpl) {?><div id="user_info_top" class="setting_top dropdown js-dropdown">
 	<span class="expand-more content-setting ion-ios-gear" data-toggle="dropdown">
 		<?php echo smartyTranslate(array('s'=>'My Account','d'=>'Shop.Theme.Actions'),$_smarty_tpl);?>
 
